@@ -65,7 +65,9 @@ public class Throwable : MonoBehaviour {
 
     public void Throw()
     {
-        data.onThownSound.Post(gameObject);
+        if (data.onThownSound != null)
+            data.onThownSound.Post(gameObject);
+
         OnThrown.Invoke();
     }
 
