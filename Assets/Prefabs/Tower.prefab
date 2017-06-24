@@ -38,7 +38,11 @@ GameObject:
   - component: {fileID: 50535319366937172}
   - component: {fileID: 114595300869891062}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 114829916943653582}
+=======
+  - component: {fileID: 114732683443213488}
+>>>>>>> origin/master
 =======
   - component: {fileID: 114732683443213488}
 >>>>>>> origin/master
@@ -304,7 +308,11 @@ MonoBehaviour:
   leftSpawnPosition: {fileID: 4968771969173598}
   rightSpawnPosition: {fileID: 4760072042657938}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &114829916943653582
+=======
+--- !u!114 &114732683443213488
+>>>>>>> origin/master
 =======
 --- !u!114 &114732683443213488
 >>>>>>> origin/master
@@ -316,14 +324,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 9d32d57f852d742c99a12b0dcb065f17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 =======
+=======
+>>>>>>> origin/master
   m_Script: {fileID: 11500000, guid: 8220e1c7bc0814d419c4b76f2ac05e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentCenter: {fileID: 4470507861287762}
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 --- !u!212 &212481234451319678
 SpriteRenderer:
