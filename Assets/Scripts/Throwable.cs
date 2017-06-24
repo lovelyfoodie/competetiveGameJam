@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class Throwable : MonoBehaviour {
 
     public ThrowableData data;
-    
+    public UnityEvent OnThrown;
+
     public float Area
     {
         get
@@ -59,6 +61,12 @@ public class Throwable : MonoBehaviour {
     private void OnValidate()
     {
         Rigidbody.mass = Mass;
+    }
+
+    public void Throw()
+    {
+        data.onThownSound.Post(gameObject);
+        OnThrown.Invoke();
     }
 
 }

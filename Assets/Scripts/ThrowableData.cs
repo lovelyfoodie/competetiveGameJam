@@ -4,4 +4,5 @@
 public class ThrowableData : ScriptableObject
 {
     public float density;
+    public WwisePostEvent onThownSound;
 }
