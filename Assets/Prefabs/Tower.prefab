@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4739167285376916}
   - component: {fileID: 70103973418020700}
   - component: {fileID: 50535319366937172}
+  - component: {fileID: 114595300869891062}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -36,7 +37,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4154287082042606}
-  - component: {fileID: 114007923450660190}
   m_Layer: 0
   m_Name: PlayerPlatform
   m_TagString: Untagged
@@ -194,17 +194,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.06832954, y: -1.4678196}
   m_Size: {x: 0.19818193, y: 3.0319793}
   m_Direction: 0
---- !u!114 &114007923450660190
+--- !u!114 &114595300869891062
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1077701654542218}
+  m_GameObject: {fileID: 1055206892024012}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47251b197913a6742a22cc645c0f94b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftPlayerPrefab: {fileID: 1289696356988766, guid: 1912f748d06b38f499d8fc5c9e19b670,
+    type: 2}
+  rightPlayerPrefab: {fileID: 0}
+  leftSpawnPosition: {fileID: 4968771969173598}
+  rightSpawnPosition: {fileID: 4760072042657938}
 --- !u!212 &212481234451319678
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -236,7 +241,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 95abf9d9ac4fa0041bbad63a9cf5a5fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
