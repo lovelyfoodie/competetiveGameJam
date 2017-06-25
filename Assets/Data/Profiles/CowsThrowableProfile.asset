@@ -9,27 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33914800a94fae542b9f11e799da0d73, type: 3}
-  m_Name: BaseThrowableProfile
+  m_Name: CowsThrowableProfile
   m_EditorClassIdentifier: 
   spawnData:
-  - weight: 6
-    prefabRef: {fileID: 1817271452645040, guid: 264ab6133e9a8c345b2305ae0ed59bd0,
-      type: 2}
-  - weight: 6
-    prefabRef: {fileID: 1817271452645040, guid: 45565ce9b263c5940942b4d8390a6426,
-      type: 2}
-  - weight: 6
-    prefabRef: {fileID: 1817271452645040, guid: b38f8434365cd5444a44b35b76d9e390,
-      type: 2}
-  - weight: 2
+  - weight: 1
     prefabRef: {fileID: 1817271452645040, guid: de7cfed8b2ddee14f9f582a9ad04dc58,
-      type: 2}
-  - weight: 1
-    prefabRef: {fileID: 1817271452645040, guid: d3bf7e5e2814adc458bd164bd0fa3fcb,
-      type: 2}
-  - weight: 1
-    prefabRef: {fileID: 1817271452645040, guid: 54cab36e1b521f7469db31afe950caef,
-      type: 2}
-  - weight: 4
-    prefabRef: {fileID: 1817271452645040, guid: b8f9b136977eabd4f98cb4c9b022374e,
       type: 2}
