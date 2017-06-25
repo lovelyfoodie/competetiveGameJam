@@ -11,8 +11,6 @@ public class GustOfWind : MonoBehaviour {
 	private GameObject [] spawnPoints; 
 	private const float MIN_TIME = 7;
 	private const float MAX_TIME = 14;
-	[SerializeField]
-	private GameObject gustPrefab; 
 	private Tower tower; 
 	float xForce;
 
@@ -35,19 +33,18 @@ public class GustOfWind : MonoBehaviour {
 		GameObject currSpawn = spawnPoints [spawnPoint];
 		Debug.Log ("Spawn " + spawnPoint);
 
-		GameObject gustPrefabInstance = Instantiate (gustPrefab, currSpawn.gameObject.transform.position, currSpawn.gameObject.transform.rotation);
-
-		Animator gustAnimator = gustPrefabInstance.gameObject.GetComponent<Animator> ();
+		ParticleSystem partSys = currSpawn.GetComponent <ParticleSystem> ();
+		partSys.Play ();
 
 
 		//Todo: play animation
 		if (spawnPoint == 2 || spawnPoint == 3) {
-			xForce = Random.Range (20, 40) * -1;
+			xForce = Random.Range (50, 100) * -1;
 			Debug.Log ("LeftGust: "+xForce.ToString ());
 			
 		} 
 		else {
-			xForce = Random.Range (20, 40);
+			xForce = Random.Range (50, 100);
 			Debug.Log ("RightGust"+xForce.ToString ());
 		}
 
