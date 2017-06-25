@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoseCollider : MonoBehaviour {
 
@@ -19,6 +21,10 @@ public class LoseCollider : MonoBehaviour {
 		Debug.Log (other.transform.name);
 		if (other.transform.name.Equals ("PlayerPlatform")) {
 			timer.Stop ();
+			//TODO check if top score against PlayerPrefs
+			PlayerPrefs.SetString("FinalScore",timer.GetComponent<Text>().text);
+			//Switch to end scene
+			SceneManager.LoadScene("LoseScreen");
 		}
 	}
 }
