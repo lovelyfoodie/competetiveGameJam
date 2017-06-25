@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 618c2e5beeddc4144a87f32b11414f0f
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/67f2cef3aa1284fef850f216f1b97f13
+    path: 
     guid: 67f2cef3aa1284fef850f216f1b97f13
+  - enabled: 1
+    path: Assets/Scenes/BalanceTower.unity
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/LoseScreen.unity
     guid: 7f10430a9a8d54ecc858f0395aea2a3f
