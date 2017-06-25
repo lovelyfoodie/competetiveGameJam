@@ -66,39 +66,143 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="throw_simple" ID="{1FF372D9-91BA-4084-821B-5C51A9922AED}">
+							<ChildrenList>
+								<Action Name="Play" ID="{1F2665C6-4662-463B-A298-5047A53F49D4}" ShortID="830645578" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2EB85FF3-FC41-414C-A3B5-7EACEB8C5E04}" Global="false">
+											<ObjectRef Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="throw_person" ID="{884BED8C-4453-45B1-B8D8-CD7CB169123A}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6D49B24A-761F-49BF-9CC3-ACB112DB8D3A}" ShortID="280820222" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8136F844-3FBC-4E32-810A-5B5758E58660}" Global="false">
+											<ObjectRef Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{5D2D8C90-3CDE-4440-BFA0-C77808D847DA}" ShortID="821746646" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8EC01F8F-BCEB-4368-8A3B-DC03AE112223}" Global="false">
+											<ObjectRef Name="Person" ID="{03B6C66F-F0F0-4244-B3A8-5B5C267F2C82}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="throw_cactus" ID="{3A87638C-9F88-4D85-A8DD-7B09A4DA8573}">
+							<ChildrenList>
+								<Action Name="Play" ID="{CBC152AF-4C9D-457B-B138-5717B84A2398}" ShortID="778886632" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2A22BD2E-7C9F-484B-B037-A3F9A2D3315F}" Global="false">
+											<ObjectRef Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{9924111E-BED8-4A9C-8223-5895640F0132}" ShortID="915941536" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Probability" Type="Real64" Value="50"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{C3C7173E-EDE1-4B8A-945C-7DFBE34F7D79}" Global="false">
+											<ObjectRef Name="Cactus" ID="{06C4D3F6-0285-4A7A-8E0A-E9E159AB0A1E}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="throw_cat" ID="{F251FDD7-0669-49C8-A042-0997FA47F5FC}">
+							<ChildrenList>
+								<Action Name="Play" ID="{71C82EEF-98C2-43FD-B304-B2345BC75C43}" ShortID="267751806" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E3DC76E5-36B8-4067-91B0-A4BDDF2A9FF2}" Global="false">
+											<ObjectRef Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{E27E4499-B72C-4A08-B7DF-47B1A9AAAA96}" ShortID="429258755" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E139E192-0D38-4045-9070-A01D7739243F}" Global="false">
+											<ObjectRef Name="Cat" ID="{CECF2CBD-C78D-46B8-AA85-A232AC765CCC}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="throw_person_male" ID="{EA746D6D-8313-4A63-AB49-706CED0019A0}">
+							<ChildrenList>
+								<Action Name="Play" ID="{209063CA-2F8E-4B87-B6A6-B81AA2121695}" ShortID="388397437" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B5560EEB-4909-4FC8-BA4A-E3DFEB431F1F}" Global="false">
+											<ObjectRef Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{FAA5D2B2-76C3-49C3-BA83-77C1A82829B5}" ShortID="483996254" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1F60BA4E-F5AA-40C4-BE54-C041C20A414F}" Global="false">
+											<ObjectRef Name="Male" ID="{E535FC9B-DF0A-4B3A-A81E-04EF523F031A}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="throw_person_female" ID="{2BBFB8AF-DE2F-41FF-94A6-4DB1D9BB7D4D}">
+							<ChildrenList>
+								<Action Name="Play" ID="{E9701CDD-1FD0-4B30-A0BA-8BF6779C83FE}" ShortID="716966196" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1E6D96A6-258D-4FA4-A008-1FFB177D30A1}" Global="false">
+											<ObjectRef Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{D0D6EB9A-88D1-434C-A1EC-E3B43DBD6C7A}" ShortID="893984382" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9399255C-8259-4785-A7C7-F7DF6A57A9AC}" Global="false">
+											<ObjectRef Name="Female" ID="{BD5D2A1E-60A9-4DF8-8184-A146B90F6AEF}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="play_tower_lean_loop" ID="{0468497A-70EC-4A02-8E42-067ECEAD2EE9}">
+				<Event Name="play_left_tower_lean_loop" ID="{0468497A-70EC-4A02-8E42-067ECEAD2EE9}">
 					<ChildrenList>
 						<Action Name="Play" ID="{231D40CC-0F64-4BDE-922C-4EEB65DB4DC0}" ShortID="851612344" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{083F30AE-3337-4C9B-9C83-9C7C1538CE9F}" Global="false">
-									<ObjectRef Name="Tower_Lean_Sweetener_Loop" ID="{7AAE805C-44B3-43C3-BD3A-C32F7CE7F5A3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+									<ObjectRef Name="Tower_Lean_Sweetener_Loop_Left" ID="{7AAE805C-44B3-43C3-BD3A-C32F7CE7F5A3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
 								</Element>
 							</ElementList>
 						</Action>
 						<Action Name="Play" ID="{46180F0C-1BD2-4B1C-874C-CD2BB98B34C7}" ShortID="103230499" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{BBDDEEEB-2B0E-413F-8A51-94AD2D7B08ED}" Global="false">
-									<ObjectRef Name="Tower_Lean_Woodcreak_Loop" ID="{F6C97410-46CA-4ED6-996C-E35E2C8A82C2}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+									<ObjectRef Name="Tower_Lean_Woodcreak_Loop_Left" ID="{F6C97410-46CA-4ED6-996C-E35E2C8A82C2}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
 								</Element>
 							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="stop_tower_lean_loop" ID="{FA252A83-7334-4D20-853C-FA2A2045E3D4}">
+				<Event Name="stop_left_tower_lean_loop" ID="{FA252A83-7334-4D20-853C-FA2A2045E3D4}">
 					<ChildrenList>
 						<Action Name="Stop" ID="{80F0E837-FB93-479E-8178-8E11ABE39F56}" ShortID="533170371" Type="Stop" Scope="One" Global="true">
 							<ElementList>
 								<Element ID="{4B64E5F5-6F09-4802-B69C-B748AB9711AA}" Global="true">
-									<ObjectRef Name="Tower_Lean_Sweetener_Loop" ID="{7AAE805C-44B3-43C3-BD3A-C32F7CE7F5A3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+									<ObjectRef Name="Tower_Lean_Sweetener_Loop_Left" ID="{7AAE805C-44B3-43C3-BD3A-C32F7CE7F5A3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
 								</Element>
 							</ElementList>
 						</Action>
 						<Action Name="Stop" ID="{F9BEA0A7-A277-4159-8215-8947768A4DC8}" ShortID="438703460" Type="Stop" Scope="One" Global="true">
 							<ElementList>
 								<Element ID="{6AF2C18B-2047-4EBC-96C5-1A0A731B00CA}" Global="true">
-									<ObjectRef Name="Tower_Lean_Woodcreak_Loop" ID="{F6C97410-46CA-4ED6-996C-E35E2C8A82C2}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+									<ObjectRef Name="Tower_Lean_Woodcreak_Loop_Left" ID="{F6C97410-46CA-4ED6-996C-E35E2C8A82C2}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -249,6 +353,99 @@
 							<ElementList>
 								<Element ID="{263046CA-A186-41C6-B848-3EE522F051D0}" Global="true">
 									<ObjectRef Name="SFX" ID="{B1A6D37B-64A9-4B2F-BC8A-FD1535CCEABD}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="stop_right_tower_lean_loop" ID="{EE4DADEA-4750-4130-96FF-49499ED9C03D}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{9D32CFD4-5DD6-4C8A-84D0-344558D07368}" ShortID="701938362" Type="Stop" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{DE762B5D-FF91-495C-A13F-84327EA39DD6}" Global="true">
+									<ObjectRef Name="Tower_Lean_Sweetener_Loop_Right" ID="{4CD2AF01-90CC-4EDD-8F39-1AD4B5A704B7}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{1B85A573-BBDE-4557-866D-2CF9F6C203EC}" ShortID="325963591" Type="Stop" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{C7926311-BDB0-4642-97B0-8F6D1B85CA95}" Global="true">
+									<ObjectRef Name="Tower_Lean_Woodcreak_Loop_Right" ID="{14ED788D-BAA6-4BF6-8D55-51ECF6F0F6BC}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_right_tower_lean_loop" ID="{47A2EA3F-8A33-4C6E-87A5-26068488929D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CB04B582-04DE-40D3-A778-4C01A164BF76}" ShortID="379324245" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B6A0584C-355E-4729-B41C-BA2B51A9BE35}" Global="false">
+									<ObjectRef Name="Tower_Lean_Sweetener_Loop_Right" ID="{4CD2AF01-90CC-4EDD-8F39-1AD4B5A704B7}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{768BBB13-DAC9-49C0-82C4-AAA39B5E46C7}" ShortID="974292044" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C63B3694-EED5-4C39-8A7D-093D42930A19}" Global="false">
+									<ObjectRef Name="Tower_Lean_Woodcreak_Loop_Right" ID="{14ED788D-BAA6-4BF6-8D55-51ECF6F0F6BC}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="AMB Events" ID="{00B4DF88-3CA1-448D-B697-DD15483F0A8B}" ShortID="981662167">
+					<ChildrenList>
+						<Event Name="play_bird_loop" ID="{AAF16AF4-89A5-41AB-B567-BB02E4973766}">
+							<ChildrenList>
+								<Action Name="Play" ID="{B514350E-E066-4CFB-9CC9-5285DB773F2A}" ShortID="704843353" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{B0C68B1D-F727-4645-AD59-797C479EA8E0}" Global="false">
+											<ObjectRef Name="Amb_Bird_Loop" ID="{421D324C-511E-4801-84D7-56C38658278A}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_bird_loop" ID="{0283A6EE-3619-450B-A129-D07555DCD0BC}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{56E15B90-7912-478D-90E8-EE82BEE2804A}" ShortID="521050470" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{377AB09E-B03F-4240-BDCE-398B54881FC8}" Global="false">
+											<ObjectRef Name="Amb_Bird_Loop" ID="{421D324C-511E-4801-84D7-56C38658278A}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="ui_select" ID="{47951249-BE6B-4050-BDBC-4621C717DA7E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{0EC435CA-C3CD-477F-8448-11359ED8BA7D}" ShortID="321378441" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DE2DABD1-14F8-48DF-B82E-94D8C4DE311F}" Global="false">
+									<ObjectRef Name="UI_Select" ID="{90304F48-4641-41F8-BC61-14232BD95F97}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="wind_gust" ID="{97D1E8DD-13E4-47A0-9408-67F642E3FC60}">
+					<ChildrenList>
+						<Action Name="Play" ID="{9FA75D84-4DCD-491B-82EC-9B1051597326}" ShortID="1035042721" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{2E926D68-6521-4FE1-B929-86A747DF8D97}" Global="false">
+									<ObjectRef Name="Wind_Gust" ID="{F065C330-2FA9-4978-8C4E-F6E47CF9931D}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
 								</Element>
 							</ElementList>
 						</Action>

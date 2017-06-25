@@ -3,26 +3,26 @@
 	<Platform GUID="{368C44F5-3507-448C-985E-53A0F2D56B34}">
 		<Banks>
 			<Language ID="0">
-				<File Name="GameJamSummer2017" Hash="1006955421" Timestamp="131428322901846373"/>
-				<File Name="Init" Hash="2274007369" Timestamp="131428306326668054"/>
+				<File Name="GameJamSummer2017" Hash="1338650877" Timestamp="131428929503657560"/>
+				<File Name="Init" Hash="624080492" Timestamp="131428921483140826"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3841983421" Timestamp="131428740679829482"/>
+				<File Name="" Hash="1390904060" Timestamp="131428929503952743"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{4D234B64-385A-49DC-A326-F66BE9DCED1B}">
 		<Banks>
 			<Language ID="0">
-				<File Name="GameJamSummer2017" Hash="1006955421" Timestamp="131428322905132426"/>
-				<File Name="Init" Hash="3659515659" Timestamp="131428306346486482"/>
+				<File Name="GameJamSummer2017" Hash="1338650877" Timestamp="131428929509156657"/>
+				<File Name="Init" Hash="1981856722" Timestamp="131428921490254542"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3818602227" Timestamp="131428740684329739"/>
+				<File Name="" Hash="2855277574" Timestamp="131428929509476865"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

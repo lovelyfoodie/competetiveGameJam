@@ -5,33 +5,71 @@
 			<ChildrenList>
 				<GameParameter Name="size_rock" ID="{6B348965-FC75-4DEA-9D99-3BD2C95B508A}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="size_cow" ID="{CF9EFA9A-CF30-4A9D-8275-53463B926142}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="size_rubberduck" ID="{ABBACAD1-766A-4F1B-836C-F886B83964D4}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<Folder Name="tower" ID="{E87A6397-1B82-4CBA-9BF5-240644F02476}" ShortID="257479845">
 					<ChildrenList>
-						<GameParameter Name="tower_deflection" ID="{DBBDEF4B-C0C1-464B-B443-17BC5CC74820}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="100"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="tower_velocity" ID="{50C524C4-3C38-4558-AD90-D5D6329FCE9F}">
+						<GameParameter Name="tower_deflection_right" ID="{DBBDEF4B-C0C1-464B-B443-17BC5CC74820}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="6.83"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="tower_velocity_right" ID="{50C524C4-3C38-4558-AD90-D5D6329FCE9F}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+								<Property Name="Min" Type="Real64" Value="-10"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="tower_deflection_left" ID="{DC2D7636-99AF-4432-9F39-C6C603280677}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="6.83"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="tower_velocity_left" ID="{DFEFEF53-818A-45D5-AFAD-6546494534D6}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+								<Property Name="Min" Type="Real64" Value="-10"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<GameParameter Name="size_person" ID="{9F830CC8-29EA-4748-B576-3B4D3D6D8B09}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="size_cat" ID="{9F4BD23A-CEF9-4156-B302-50C62301D89B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="size_cactus" ID="{B894E525-14E9-4E2B-B8F6-56AFC1FA46DF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="wind_volume" ID="{9022ABFD-73CE-4887-A442-4EB5A987012C}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

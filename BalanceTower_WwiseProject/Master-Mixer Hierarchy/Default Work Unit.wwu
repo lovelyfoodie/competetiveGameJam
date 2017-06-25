@@ -4,13 +4,27 @@
 		<WorkUnit Name="Default Work Unit" ID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="MasterLimiter" ID="{F8666790-8D2F-451A-8967-0DFA9ED58613}" WorkUnitID="{2D518B34-2E6C-43AA-A00A-458085B0EF83}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="MX" ID="{70DE2CBB-D6BB-40DD-B943-8429206D5ECD}"/>
 						<Bus Name="SFX" ID="{B1A6D37B-64A9-4B2F-BC8A-FD1535CCEABD}">
 							<ChildrenList>
 								<Bus Name="Throwables" ID="{52BDF178-9F06-4A49-9B5C-FF8C8015532F}"/>
-								<Bus Name="Base_Throwable" ID="{886A33D1-B757-425B-8F50-3B7276362CF9}"/>
+								<Bus Name="Base_Throwable" ID="{886A33D1-B757-425B-8F50-3B7276362CF9}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
 								<Bus Name="Tower" ID="{540CCB15-1B5E-406A-9185-268570CABEB9}"/>
+								<Bus Name="AMB" ID="{A4172C37-0B0D-4FCA-8582-6222EE41E98B}"/>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="UI" ID="{250AB565-795F-4C90-82C2-0E92B7D183E8}"/>

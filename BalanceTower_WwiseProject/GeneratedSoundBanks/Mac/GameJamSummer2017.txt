@@ -1,19 +1,31 @@
 Event	ID	Name			Wwise Object Path	Notes
+	74568784	play_bird_loop			\Default Work Unit\AMB Events\play_bird_loop	
 	80529422	music_unpause			\Default Work Unit\Music\music_unpause	
+	431171811	wind_gust			\Default Work Unit\wind_gust	
+	846393217	stop_left_tower_lean_loop			\Default Work Unit\stop_left_tower_lean_loop	
+	916551976	throw_simple			\Default Work Unit\Throw Events\throw_simple	
 	1207426921	throw_rock			\Default Work Unit\Throw Events\throw_rock	
 	1305045635	sfx_unmute			\Default Work Unit\sfx_unmute	
-	1602866773	play_tower_lean_loop			\Default Work Unit\play_tower_lean_loop	
+	1460153757	throw_person			\Default Work Unit\Throw Events\throw_person	
 	1696404602	music_mute			\Default Work Unit\Music\music_mute	
+	1722017399	throw_cactus			\Default Work Unit\Throw Events\throw_cactus	
+	1821836184	throw_person_female			\Default Work Unit\Throw Events\throw_person_female	
 	1868184033	music_stop_all			\Default Work Unit\Music\music_stop_all	
-	2083153279	stop_tower_lean_loop			\Default Work Unit\stop_tower_lean_loop	
 	2132259803	music_unmute			\Default Work Unit\Music\music_unmute	
+	2774129122	ui_select			\Default Work Unit\ui_select	
 	2835551186	sfx_mute			\Default Work Unit\sfx_mute	
 	2895066125	music_pause			\Default Work Unit\Music\music_pause	
 	2897915005	music_gameover			\Default Work Unit\Music\music_gameover	
 	3115441195	throw_cow			\Default Work Unit\Throw Events\throw_cow	
+	3216106938	throw_cat			\Default Work Unit\Throw Events\throw_cat	
+	3217273127	throw_person_male			\Default Work Unit\Throw Events\throw_person_male	
+	3268665312	stop_right_tower_lean_loop			\Default Work Unit\stop_right_tower_lean_loop	
 	3366340267	music_play_menu			\Default Work Unit\Music\music_play_menu	
+	3452427035	play_left_tower_lean_loop			\Default Work Unit\play_left_tower_lean_loop	
+	3682855322	play_right_tower_lean_loop			\Default Work Unit\play_right_tower_lean_loop	
 	4018292301	music_setstate_gameplay			\Default Work Unit\Music\music_setstate_gameplay	
 	4038429815	throw_rubberduck			\Default Work Unit\Throw Events\throw_rubberduck	
+	4172146526	stop_bird_loop			\Default Work Unit\AMB Events\stop_bird_loop	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Music	
@@ -26,14 +38,20 @@ State	ID	Name	State Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	390094722	size_cow			\Default Work Unit\size_cow	
+	423650159	size_cat			\Default Work Unit\size_cat	
 	2052870438	size_rock			\Default Work Unit\size_rock	
+	2200024109	tower_velocity_right			\Default Work Unit\tower\tower_velocity_right	
+	2410988942	tower_velocity_left			\Default Work Unit\tower\tower_velocity_left	
 	3191294052	size_rubberduck			\Default Work Unit\size_rubberduck	
-	3224109358	tower_deflection			\Default Work Unit\tower\tower_deflection	
-	4157244170	tower_velocity			\Default Work Unit\tower\tower_velocity	
+	3702815938	tower_deflection_left			\Default Work Unit\tower\tower_deflection_left	
+	3716034112	size_cactus			\Default Work Unit\size_cactus	
+	3963995609	tower_deflection_right			\Default Work Unit\tower\tower_deflection_right	
+	4084248706	size_person			\Default Work Unit\size_person	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\SFX\AMB	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	1685527054	MX			\Default Work Unit\Master Audio Bus\MX	
 	1737926756	Tower			\Default Work Unit\Master Audio Bus\SFX\Tower	
@@ -41,27 +59,42 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3185637426	Throwables			\Default Work Unit\Master Audio Bus\SFX\Throwables	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
+Effect plug-ins	ID	Name	Type				Notes
+	720514353	MasterLimiter	Wwise Compressor			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	9195285	throw_person_male_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_person_male_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Person\Male\throw_person_male_01		202974
+	11737965	throw_cat_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cat_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cat\throw_cat_01		114952
+	44553285	forest_wind_gust_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\forest_wind_gust_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind_Gust\forest_wind_gust_01		374948
 	50754923	throw_base_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_base_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Base_Throw\throw_base_03		49974
 	59895823	music_ending_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\music_ending_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Flow\Ending\music_ending_01\music_ending_01		929508
-	294560458	throw_rock_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_rock_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Rock\throw_rock_03		82978
-	315265771	throw_rock_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_rock_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Rock\throw_rock_02		74522
+	80067457	throw_cactus_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cactus_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cactus\throw_cactus_01		63870
+	206278157	ui_select_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\ui_select_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Select\ui_select_01		18078
+	294560458	throw_rock_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_rock_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Rock\throw_rock_03		107886
+	315265771	throw_rock_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_rock_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Rock\throw_rock_02		89156
 	316579585	throw_rubberduck_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_rubberduck_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\RubberDuck\throw_rubberduck_01		89720
 	393328683	throw_base_04	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_base_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Base_Throw\throw_base_04		52360
-	402518213	tower_lean_woodcreak_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\tower_lean_woodcreak_loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Tower_Lean_Woodcreak_Loop\tower_lean_woodcreak_loop		555682
+	402518213	tower_lean_woodcreak_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\tower_lean_woodcreak_loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Tower_Lean_Woodcreak_Loop_Left\tower_lean_woodcreak_loop		555682
 	406704523	throw_cow_bell_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cow_bell_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Bell\throw_cow_bell_01		161848
 	453501422	throw_rubberduck_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_rubberduck_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\RubberDuck\throw_rubberduck_02		78674
+	515898601	amb_birds_loop_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\amb_birds_loop_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb_Bird_Loop\amb_birds_loop_01		18955908
 	586500131	throw_base_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_base_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Base_Throw\throw_base_02		45662
 	631879142	throw_cow_moo_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cow_moo_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Moo\throw_cow_moo_03		93896
 	676010775	throw_rubberduck_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_rubberduck_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\RubberDuck\throw_rubberduck_03		79626
 	697489298	throw_cow_bell_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cow_bell_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Bell\throw_cow_bell_03		168944
 	698212520	throw_cow_moo_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cow_moo_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Moo\throw_cow_moo_01		105110
 	706876863	throw_cow_moo_04	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cow_moo_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Moo\throw_cow_moo_04		113326
+	745879590	throw_cat_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cat_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cat\throw_cat_02		138970
+	759460425	throw_person_female_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_person_female_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Person\Female\throw_person_female_01		205694
 	760154812	music_main_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\music_main_loop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Flow\Gameplay\music_main_loop\music_main_loop		25173192
-	781255647	throw_rock_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_rock_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Rock\throw_rock_01		82214
+	775454606	throw_cat_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cat_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cat\throw_cat_03		132872
+	781255647	throw_rock_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_rock_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Rock\throw_rock_01		90360
 	812711203	throw_cow_moo_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cow_moo_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Moo\throw_cow_moo_02		97024
 	836285372	throw_cow_bell_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_cow_bell_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Bell\throw_cow_bell_02		164742
-	882148558	tower_lean_sweetener_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\tower_lean_sweetener_loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Tower_Lean_Sweetener_Loop\tower_lean_sweetener_loop		67966
+	849509325	forest_wind_gust_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\forest_wind_gust_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind_Gust\forest_wind_gust_03		308940
+	867739630	ui_select_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\ui_select_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Select\ui_select_02		18096
+	882148558	tower_lean_sweetener_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\tower_lean_sweetener_loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Tower_Lean_Sweetener_Loop_Left\tower_lean_sweetener_loop		67966
+	885477264	forest_wind_gust_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\forest_wind_gust_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind_Gust\forest_wind_gust_02		320222
 	904417328	throw_base_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\throw_base_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Base_Throw\throw_base_01		39650
 	1054428328	music_menu_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\SFX\music_menu_loop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Flow\Menu\music_menu_loop\music_menu_loop		3456316
 

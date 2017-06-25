@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: RubberDuckThrowable
   m_EditorClassIdentifier: 
   density: 0.2
-  minSize: 0.8
+  minSize: 1
   maxSize: 2
   sizeDistribution:
     serializedVersion: 2

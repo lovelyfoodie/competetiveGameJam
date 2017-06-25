@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2D518B34-2E6C-43AA-A00A-458085B0EF83}" SchemaVersion="75">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{2D518B34-2E6C-43AA-A00A-458085B0EF83}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2D518B34-2E6C-43AA-A00A-458085B0EF83}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="MasterLimiter" ID="{F8666790-8D2F-451A-8967-0DFA9ED58613}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="OutputGain" Type="Real32" Value="0.9"/>
+						<Property Name="Ratio" Type="Real32" Value="50"/>
+						<Property Name="Threshold" Type="Real32" Value="-1"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
