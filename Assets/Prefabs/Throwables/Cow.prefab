@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4371545775874472}
   - component: {fileID: 212085385595508444}
+  - component: {fileID: 95845174443761720}
   m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
@@ -51,9 +52,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1817271452645040}
-  m_LocalRotation: {x: -0, y: -0, z: 0.58820343, w: 0.808713}
-  m_LocalPosition: {x: -1.1760426, y: 1.296632, z: 0}
-  m_LocalScale: {x: 0.41315326, y: 0.41315326, z: 0.41315326}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4371545775874472}
   m_Father: {fileID: 0}
@@ -83,7 +84,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 4.212365
+  m_Mass: 1.6199999
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -104,9 +105,26 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.04}
-  m_Size: {x: 1.7547885, y: 1.2002486}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.9, y: 0.9}
   m_Direction: 1
+--- !u!95 &95845174443761720
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1566398643148080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 439ee72a010f24e49ae36f35eade3cb4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114083957582806122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,7 +174,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1666788f7d950e54bb3b5b319cab9d0e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 25f299636e2eb4f47a253e6a1711007b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

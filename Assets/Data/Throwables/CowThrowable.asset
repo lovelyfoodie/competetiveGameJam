@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: CowThrowable
   m_EditorClassIdentifier: 
   density: 2
-  minSize: 0.2
-  maxSize: 0.5
+  minSize: 1.5
+  maxSize: 2.5
   sizeDistribution:
     serializedVersion: 2
     m_Curve:

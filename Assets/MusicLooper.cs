@@ -9,6 +9,9 @@ public class MusicLooper : MonoBehaviour {
     public WwisePostEvent startGameplayMusicEvent;
     public WwisePostEvent startGameoverMusicEvent;
 
+    public WwisePostEvent startBirdChirpEvent;
+    public WwisePostEvent stopBirdChirpEvent;
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -34,6 +37,23 @@ public class MusicLooper : MonoBehaviour {
         if (startGameoverMusicEvent != null)
         {
             startGameoverMusicEvent.Post(gameObject);
+        }
+    }
+
+    public void EnableBirdSounds(bool enable)
+    {
+        if (enable)
+        {
+            if (startBirdChirpEvent != null)
+            {
+                startBirdChirpEvent.Post(gameObject);
+            }
+        } else
+        {
+            if (stopBirdChirpEvent != null)
+            {
+                stopBirdChirpEvent.Post(gameObject);
+            }
         }
     }
 }
