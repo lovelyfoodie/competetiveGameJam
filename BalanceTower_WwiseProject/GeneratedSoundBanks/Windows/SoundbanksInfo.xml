@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="923520148" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\GameJamSummer2017</ObjectPath>
+			<ShortName>GameJamSummer2017</ShortName>
+			<Path>GameJamSummer2017.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3115441195" Name="throw_cow" ObjectPath="\Events\Default Work Unit\Throw Events\throw_cow"/>
+				<Event Id="1207426921" Name="throw_rock" ObjectPath="\Events\Default Work Unit\Throw Events\throw_rock"/>
+				<Event Id="4038429815" Name="throw_rubberduck" ObjectPath="\Events\Default Work Unit\Throw Events\throw_rubberduck"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="50754923" Language="SFX">
+					<ShortName>throw_base_03.wav</ShortName>
+					<Path>SFX\throw_base_03_9E69E797.wem</Path>
+				</File>
+				<File Id="294560458" Language="SFX">
+					<ShortName>throw_rock_03.wav</ShortName>
+					<Path>SFX\throw_rock_03_9E69E797.wem</Path>
+				</File>
+				<File Id="315265771" Language="SFX">
+					<ShortName>throw_rock_02.wav</ShortName>
+					<Path>SFX\throw_rock_02_9E69E797.wem</Path>
+				</File>
+				<File Id="316579585" Language="SFX">
+					<ShortName>throw_rubberduck_01.wav</ShortName>
+					<Path>SFX\throw_rubberduck_01_9E69E797.wem</Path>
+				</File>
+				<File Id="393328683" Language="SFX">
+					<ShortName>throw_base_04.wav</ShortName>
+					<Path>SFX\throw_base_04_9E69E797.wem</Path>
+				</File>
+				<File Id="406704523" Language="SFX">
+					<ShortName>throw_cow_bell_01.wav</ShortName>
+					<Path>SFX\throw_cow_bell_01_9E69E797.wem</Path>
+				</File>
+				<File Id="453501422" Language="SFX">
+					<ShortName>throw_rubberduck_02.wav</ShortName>
+					<Path>SFX\throw_rubberduck_02_9E69E797.wem</Path>
+				</File>
+				<File Id="586500131" Language="SFX">
+					<ShortName>throw_base_02.wav</ShortName>
+					<Path>SFX\throw_base_02_9E69E797.wem</Path>
+				</File>
+				<File Id="631879142" Language="SFX">
+					<ShortName>throw_cow_moo_03.wav</ShortName>
+					<Path>SFX\throw_cow_moo_03_9E69E797.wem</Path>
+				</File>
+				<File Id="676010775" Language="SFX">
+					<ShortName>throw_rubberduck_03.wav</ShortName>
+					<Path>SFX\throw_rubberduck_03_9E69E797.wem</Path>
+				</File>
+				<File Id="697489298" Language="SFX">
+					<ShortName>throw_cow_bell_03.wav</ShortName>
+					<Path>SFX\throw_cow_bell_03_9E69E797.wem</Path>
+				</File>
+				<File Id="698212520" Language="SFX">
+					<ShortName>throw_cow_moo_01.wav</ShortName>
+					<Path>SFX\throw_cow_moo_01_9E69E797.wem</Path>
+				</File>
+				<File Id="706876863" Language="SFX">
+					<ShortName>throw_cow_moo_04.wav</ShortName>
+					<Path>SFX\throw_cow_moo_04_9E69E797.wem</Path>
+				</File>
+				<File Id="781255647" Language="SFX">
+					<ShortName>throw_rock_01.wav</ShortName>
+					<Path>SFX\throw_rock_01_9E69E797.wem</Path>
+				</File>
+				<File Id="812711203" Language="SFX">
+					<ShortName>throw_cow_moo_02.wav</ShortName>
+					<Path>SFX\throw_cow_moo_02_9E69E797.wem</Path>
+				</File>
+				<File Id="836285372" Language="SFX">
+					<ShortName>throw_cow_bell_02.wav</ShortName>
+					<Path>SFX\throw_cow_bell_02_9E69E797.wem</Path>
+				</File>
+				<File Id="904417328" Language="SFX">
+					<ShortName>throw_base_01.wav</ShortName>
+					<Path>SFX\throw_base_01_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

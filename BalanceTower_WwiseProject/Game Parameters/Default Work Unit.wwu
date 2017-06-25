@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{DADED6F5-40BC-4304-9B2C-10CCBE445162}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{9AB66AE5-232B-474A-AC7C-B1AB36621412}" SchemaVersion="75">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{DADED6F5-40BC-4304-9B2C-10CCBE445162}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9AB66AE5-232B-474A-AC7C-B1AB36621412}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="size_rock" ID="{6B348965-FC75-4DEA-9D99-3BD2C95B508A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="size_cow" ID="{CF9EFA9A-CF30-4A9D-8275-53463B926142}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="size_rubberduck" ID="{ABBACAD1-766A-4F1B-836C-F886B83964D4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

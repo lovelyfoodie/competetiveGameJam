@@ -34,7 +34,9 @@ public class LeftPlayerController : MonoBehaviour {
 			float angleOfRelease = transform.rotation.z;
 			float xForce = Mathf.Cos (angleOfRelease) * thrust * .1f; 
 			tower.addForce (xForce);
-		}
+            item.GetComponent<Throwable>().Throw();
+
+        }
 
 
 			

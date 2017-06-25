@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A160AFFA-4196-49B6-8D3A-7D17384F67F6}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{5E50DEE8-092A-4E87-8417-F196D1B8B919}" SchemaVersion="75">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{A160AFFA-4196-49B6-8D3A-7D17384F67F6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5E50DEE8-092A-4E87-8417-F196D1B8B919}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="GameJamSummer2017" ID="{DD57EFD2-258A-4F5B-A946-BF157FB12698}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{13E54FF0-C611-44E7-9FD7-E0E50CEF075B}" WorkUnitID="{13E54FF0-C611-44E7-9FD7-E0E50CEF075B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

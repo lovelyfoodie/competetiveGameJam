@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 1099281868}
   - component: {fileID: 1099281867}
   - component: {fileID: 1099281866}
+  - component: {fileID: 1099281869}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -337,6 +338,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1099281869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1099281865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743a55be71071044ebac4ef50e229976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: d2ef57dd8a255b4fa946bf157fb12698
+  bankName: GameJamSummer2017
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
 --- !u!4 &1270383188 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4739167285376916, guid: 034d39f770c5b8244b5d8af1a6b1ef1d,

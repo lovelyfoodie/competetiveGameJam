@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{FC36FAC7-93D0-44F1-A263-4CA66BEDE350}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}" SchemaVersion="75">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{FC36FAC7-93D0-44F1-A263-4CA66BEDE350}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Throw Events" ID="{569597F1-B39D-4C53-8BDF-D95D41925DBF}" ShortID="465077797">
+					<ChildrenList>
+						<Event Name="throw_rubberduck" ID="{894A6CFB-DAFC-4B2D-AA1C-699DB0617506}">
+							<ChildrenList>
+								<Action Name="Play" ID="{88EF51CB-5875-48E5-BFD5-8C1B8D08203F}" ShortID="411972372" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{FF4CF367-78EF-402F-A507-A0EC64469570}" Global="false">
+											<ObjectRef Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{7803DA85-F578-45D0-91B3-463F7BB5E53A}" ShortID="285800267" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B42E625A-62E6-44BA-B555-3B2C1925C8E1}" Global="false">
+											<ObjectRef Name="RubberDuck" ID="{AFF59A7A-145B-4118-A79E-047A92D37D0B}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="throw_rock" ID="{E9A87116-B52B-4FE0-BB68-52B4F41B5B60}">
+							<ChildrenList>
+								<Action Name="Play" ID="{F4E68D0E-32D1-48E5-A9D1-47381F9FA1B2}" ShortID="1003252570" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F0DA91A8-6572-4E9C-9415-34A4FADFFE43}" Global="false">
+											<ObjectRef Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{D51743BE-12E8-4D7F-BF4E-D8A426B56C03}" ShortID="1001537792" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E6672E29-8732-4BE3-ACEB-2052B5AA8FD0}" Global="false">
+											<ObjectRef Name="Rock" ID="{E40B8902-0821-4383-8F4E-3F08772226A5}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="throw_cow" ID="{F7F07046-AD2E-4503-89F3-ECB7C9DFA800}">
+							<ChildrenList>
+								<Action Name="Play" ID="{3285A8BD-F6CA-462D-871A-605AC0809AAD}" ShortID="75883246" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8B65AD8E-3FF0-43F9-BF3A-28CCBBE48A53}" Global="false">
+											<ObjectRef Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{95BD8BAE-DACB-4C41-8A4D-C73CC71B7996}" ShortID="852608352" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{48E28A34-53F3-4E31-8A48-C412B79A1C47}" Global="false">
+											<ObjectRef Name="Cow_Moo" ID="{41DB43EE-1564-4174-94EA-F0272B60321A}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{490FD8F9-AC72-44C9-89E3-52A7F460DCA6}" ShortID="357490255" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6BD6EEA4-589E-4320-8FC1-B13BC7754F4B}" Global="false">
+											<ObjectRef Name="Cow_Bell" ID="{9EC569F0-49B7-4A4A-AAAD-6DDFC59D6D0E}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

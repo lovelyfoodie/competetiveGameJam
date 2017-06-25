@@ -1,6 +1,550 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{84764F4B-DCCD-42E8-A20F-7B7000316A7C}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}" SchemaVersion="75">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{84764F4B-DCCD-42E8-A20F-7B7000316A7C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Throwables" ID="{2E842F29-FDB5-4081-94F9-DBD80F72AC9A}" ShortID="753478695">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Throwables" ID="{52BDF178-9F06-4A49-9B5C-FF8C8015532F}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Rock" ID="{E40B8902-0821-4383-8F4E-3F08772226A5}" ShortID="715703681">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{0C587C5D-81A4-4B45-AB4A-5D7D9CAAAEAA}" ShortID="282908919">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="size_rock" ID="{6B348965-FC75-4DEA-9D99-3BD2C95B508A}" WorkUnitID="{9AB66AE5-232B-474A-AC7C-B1AB36621412}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{8A555587-B45E-495C-9EBF-E4401448210D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>1788</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="throw_rock_01" ID="{03E8CE72-004A-4823-8C33-80A0FFC7D26C}" ShortID="378620111" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="throw_rock_01" ID="{C745BA59-41A3-4426-B2D5-43DDF1F688C7}" ShortID="781255647">
+											<Language>SFX</Language>
+											<AudioFile>throw_rock_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="throw_rock_01" ID="{C745BA59-41A3-4426-B2D5-43DDF1F688C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="throw_rock_02" ID="{61A58AD1-F0D6-4DA7-B3CC-9779F7D522E6}" ShortID="1047985027" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="throw_rock_02" ID="{FB81BB12-AB98-4269-A6BD-D99AC0BDE94E}" ShortID="315265771">
+											<Language>SFX</Language>
+											<AudioFile>throw_rock_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="throw_rock_02" ID="{FB81BB12-AB98-4269-A6BD-D99AC0BDE94E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="throw_rock_03" ID="{82CC345E-ACA8-4C92-815F-1159ED12698C}" ShortID="533091579" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="throw_rock_03" ID="{6C91801F-7720-4AAA-B825-1A9443273C82}" ShortID="294560458">
+											<Language>SFX</Language>
+											<AudioFile>throw_rock_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="throw_rock_03" ID="{6C91801F-7720-4AAA-B825-1A9443273C82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="RubberDuck" ID="{AFF59A7A-145B-4118-A79E-047A92D37D0B}" ShortID="621901493">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{A9AB9B93-9890-4F89-866F-AF72EB5FB67F}" ShortID="1065230066">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="size_rubberduck" ID="{ABBACAD1-766A-4F1B-836C-F886B83964D4}" WorkUnitID="{9AB66AE5-232B-474A-AC7C-B1AB36621412}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C95D3D7F-9D44-47B8-BB8E-9CBBF4EB3F91}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>500</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="throw_rubberduck_01" ID="{2E9AC4F1-B6A3-4F26-83B6-9514F7E32AF7}" ShortID="860900462" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="throw_rubberduck_01" ID="{899F2C5D-3C12-4A11-B76C-A7BD4F74F02A}" ShortID="316579585">
+											<Language>SFX</Language>
+											<AudioFile>throw_rubberduck_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="throw_rubberduck_01" ID="{899F2C5D-3C12-4A11-B76C-A7BD4F74F02A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="throw_rubberduck_02" ID="{EE4D4F5E-D37F-4C2E-ABD6-6CDD6267E458}" ShortID="627484380" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="throw_rubberduck_02" ID="{12036D7B-7E55-4D49-8FFC-6A3668F42198}" ShortID="453501422">
+											<Language>SFX</Language>
+											<AudioFile>throw_rubberduck_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="throw_rubberduck_02" ID="{12036D7B-7E55-4D49-8FFC-6A3668F42198}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="throw_rubberduck_03" ID="{84D6D905-25E6-4116-B121-4B35521B46AF}" ShortID="39772390" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="throw_rubberduck_03" ID="{C9B21823-7C0F-400F-BA0E-5F4A5122A8DC}" ShortID="676010775">
+											<Language>SFX</Language>
+											<AudioFile>throw_rubberduck_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="throw_rubberduck_03" ID="{C9B21823-7C0F-400F-BA0E-5F4A5122A8DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Folder Name="Cow" ID="{6D6F5B99-C598-4209-9C99-F1028BFC0660}" ShortID="555582518">
+							<ChildrenList>
+								<RandomSequenceContainer Name="Cow_Moo" ID="{41DB43EE-1564-4174-94EA-F0272B60321A}" ShortID="758867282">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{EEB3A934-43D9-4D26-9106-E58CF2E907A5}" ShortID="604669953">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="size_cow" ID="{CF9EFA9A-CF30-4A9D-8275-53463B926142}" WorkUnitID="{9AB66AE5-232B-474A-AC7C-B1AB36621412}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{8EB25DF1-0337-4A19-B21B-86040970C7FE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>750</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Throwables" ID="{52BDF178-9F06-4A49-9B5C-FF8C8015532F}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="throw_cow_moo_01" ID="{04E31F3D-8DD0-4226-BD72-5FC35DF0ECD7}" ShortID="952924571" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="throw_cow_moo_01" ID="{683CCCAE-5BAD-4697-B764-BEEEC46F94D7}" ShortID="698212520">
+													<Language>SFX</Language>
+													<AudioFile>throw_cow_moo_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="throw_cow_moo_01" ID="{683CCCAE-5BAD-4697-B764-BEEEC46F94D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="throw_cow_moo_02" ID="{A94B0C27-69B8-4544-B847-803FEE33A4F5}" ShortID="566461316" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="throw_cow_moo_02" ID="{83964CB8-460F-47B9-94CF-BC0B56555BE5}" ShortID="812711203">
+													<Language>SFX</Language>
+													<AudioFile>throw_cow_moo_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="throw_cow_moo_02" ID="{83964CB8-460F-47B9-94CF-BC0B56555BE5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="throw_cow_moo_03" ID="{C9AFFD1E-07AA-4668-9C2C-CE44967F202A}" ShortID="768761008" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="throw_cow_moo_03" ID="{A03F5816-55A6-4EA0-9452-37006EF3B688}" ShortID="631879142">
+													<Language>SFX</Language>
+													<AudioFile>throw_cow_moo_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="throw_cow_moo_03" ID="{A03F5816-55A6-4EA0-9452-37006EF3B688}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="throw_cow_moo_04" ID="{4A9033C4-F09C-489D-95FD-5480D6DB0C53}" ShortID="655851470" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="throw_cow_moo_04" ID="{7E202E09-863B-4141-A652-A3BA0F7B83BA}" ShortID="706876863">
+													<Language>SFX</Language>
+													<AudioFile>throw_cow_moo_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="throw_cow_moo_04" ID="{7E202E09-863B-4141-A652-A3BA0F7B83BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Cow_Bell" ID="{9EC569F0-49B7-4A4A-AAAD-6DDFC59D6D0E}" ShortID="759113117">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{E2F9EF3C-EF2D-41F8-A692-90B4F7261D17}" ShortID="302381700">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="size_cow" ID="{CF9EFA9A-CF30-4A9D-8275-53463B926142}" WorkUnitID="{9AB66AE5-232B-474A-AC7C-B1AB36621412}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{1BB36D76-630B-45FF-8582-982E008723B1}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>750</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="throw_cow_bell_01" ID="{D8ECF32B-A8FB-4FFD-94BB-E440829C3A3A}" ShortID="231196436" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="throw_cow_bell_01" ID="{05E2AEA7-75E3-4DE4-B7C1-64060F3CF504}" ShortID="406704523">
+													<Language>SFX</Language>
+													<AudioFile>throw_cow_bell_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="throw_cow_bell_01" ID="{05E2AEA7-75E3-4DE4-B7C1-64060F3CF504}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="throw_cow_bell_02" ID="{A31DE668-1844-4B1E-8F80-5C94443844DB}" ShortID="654413559" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="throw_cow_bell_02" ID="{3FFB3B09-33CD-4B94-9F1A-F0FC335F3D7A}" ShortID="836285372">
+													<Language>SFX</Language>
+													<AudioFile>throw_cow_bell_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="throw_cow_bell_02" ID="{3FFB3B09-33CD-4B94-9F1A-F0FC335F3D7A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="throw_cow_bell_03" ID="{C39DEEFC-D2AF-4615-854C-B569F4905761}" ShortID="827147821" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="throw_cow_bell_03" ID="{13C7F3A0-59D4-4381-9606-E9CEAFBE25F0}" ShortID="697489298">
+													<Language>SFX</Language>
+													<AudioFile>throw_cow_bell_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="throw_cow_bell_03" ID="{13C7F3A0-59D4-4381-9606-E9CEAFBE25F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</ActorMixer>
+				<RandomSequenceContainer Name="Base_Throw" ID="{AF759038-9B1C-42EC-97F4-6D684C968AA3}" ShortID="753788252">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Base_Throwable" ID="{886A33D1-B757-425B-8F50-3B7276362CF9}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="throw_base_01" ID="{40F49624-A7E9-4EC3-86CC-5B860D4A7D15}" ShortID="833421304" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="throw_base_01" ID="{212D8372-3EAE-4B91-B648-B01B885310B3}" ShortID="904417328">
+									<Language>SFX</Language>
+									<AudioFile>throw_base_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="throw_base_01" ID="{212D8372-3EAE-4B91-B648-B01B885310B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="throw_base_02" ID="{1C62BC96-22EB-4BC9-8210-743B7D6C3CB5}" ShortID="543731638" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="throw_base_02" ID="{DA111E04-2194-4130-AF72-86147BA48454}" ShortID="586500131">
+									<Language>SFX</Language>
+									<AudioFile>throw_base_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="throw_base_02" ID="{DA111E04-2194-4130-AF72-86147BA48454}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="throw_base_03" ID="{84A0BC9D-566D-4944-8BF8-08555D3E77A3}" ShortID="950035936" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="throw_base_03" ID="{DCEEC4A6-F813-4A48-B6ED-951EEFAE9C62}" ShortID="50754923">
+									<Language>SFX</Language>
+									<AudioFile>throw_base_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="throw_base_03" ID="{DCEEC4A6-F813-4A48-B6ED-951EEFAE9C62}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="throw_base_04" ID="{E8D0F3A9-6E76-4948-97C9-B5A659716D40}" ShortID="681287223" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="throw_base_04" ID="{A6BAEC58-547A-4094-8FE6-01F990B68F68}" ShortID="393328683">
+									<Language>SFX</Language>
+									<AudioFile>throw_base_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="throw_base_04" ID="{A6BAEC58-547A-4094-8FE6-01F990B68F68}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

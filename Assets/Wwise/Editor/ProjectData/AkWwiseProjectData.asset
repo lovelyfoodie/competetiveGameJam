@@ -13,41 +13,87 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{FC36FAC7-93D0-44F1-A263-4CA66BEDE350}'
-    m_lastTimePsrt1: -432500608
-    m_lastTimePart2: -1999324326
-    List: []
+    Guid: '{07EE9310-BE81-4ADE-AEB4-245A3E741F99}'
+    m_lastTimePsrt1: -734202313
+    m_lastTimePart2: -1999324319
+    List:
+    - Name: throw_cow
+      Path: Default Work Unit\Throw Events\throw_cow
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Throw Events
+        ObjectType: 4
+      - ElementName: throw_cow
+        ObjectType: 3
+      ID: -1179526101
+      Guid: 4670f0f72ead034589f3ecb7c9dfa800
+      maxAttenuation: 0
+    - Name: throw_rock
+      Path: Default Work Unit\Throw Events\throw_rock
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Throw Events
+        ObjectType: 4
+      - ElementName: throw_rock
+        ObjectType: 3
+      ID: 1207426921
+      Guid: 1671a8e92bb5e04fbb6852b4f41b5b60
+      maxAttenuation: 0
+    - Name: throw_rubberduck
+      Path: Default Work Unit\Throw Events\throw_rubberduck
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Throw Events
+        ObjectType: 4
+      - ElementName: throw_rubberduck
+        ObjectType: 3
+      ID: -256537481
+      Guid: fb6c4a89fcda2d4baa1c699db0617506
+      maxAttenuation: 0
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{0C801ECE-AF38-46E8-B440-03B9BBF26D47}'
-    m_lastTimePsrt1: -432500608
-    m_lastTimePart2: -1999324326
+    Guid: '{4F00462A-585C-4C25-BAAF-9F312EF987DF}'
+    m_lastTimePsrt1: -919109159
+    m_lastTimePart2: -1999324323
     List: []
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{DE3A45F0-52C4-4E9E-A0F5-80DE22867E1C}'
-    m_lastTimePsrt1: -432500608
-    m_lastTimePart2: -1999324326
+    Guid: '{3901F2CA-8D0B-4CA5-A344-C1869E23B34B}'
+    m_lastTimePsrt1: -1514672576
+    m_lastTimePart2: -1999324327
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{59A46311-C03F-4342-BA8C-24A952BFE9EB}'
-    m_lastTimePsrt1: -432500608
+    Guid: '{F14D2FD3-2216-4429-901A-72030F89FE80}'
+    m_lastTimePsrt1: 1938800670
     m_lastTimePart2: -1999324326
     List: []
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{A160AFFA-4196-49B6-8D3A-7D17384F67F6}'
-    m_lastTimePsrt1: -432500608
-    m_lastTimePart2: -1999324326
-    List: []
-  ExpandedItems: []
+    Guid: '{5E50DEE8-092A-4E87-8417-F196D1B8B919}'
+    m_lastTimePsrt1: -179579824
+    m_lastTimePart2: -1999324319
+    List:
+    - Name: GameJamSummer2017
+      Path: Default Work Unit\GameJamSummer2017
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameJamSummer2017
+        ObjectType: 7
+      ID: 923520148
+      Guid: d2ef57dd8a255b4fa946bf157fb12698
+  ExpandedItems:
+  - /BalanceTower_WwiseProject
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
