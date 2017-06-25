@@ -330,6 +330,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114853822465246654, guid: ccf09435c27497147acaddd11fcad298,
+        type: 2}
+      propertyPath: basePath
+      value: Audio/GeneratedSoundBanks
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccf09435c27497147acaddd11fcad298, type: 2}
   m_IsPrefabParent: 0
@@ -443,6 +448,8 @@ MonoBehaviour:
     type: 2}
   startGameoverMusicEvent: {fileID: 11400000, guid: 6f417f5e56a32ba49aea3aaa5dc5e556,
     type: 2}
+  startBirdChirpEvent: {fileID: 0}
+  stopBirdChirpEvent: {fileID: 0}
 --- !u!4 &669538479
 Transform:
   m_ObjectHideFlags: 0
