@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
     }
 	void Start() {
 		spawner = GetComponent<ThrowableSpawner> ();
-		tower = FindObjectOfType<Tower> ();
+		tower = GetComponentInParent<Tower> ();
 
         // Init held throwable.
         LoadNextItem();
