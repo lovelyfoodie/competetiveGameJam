@@ -333,7 +333,7 @@ Prefab:
     - target: {fileID: 114853822465246654, guid: ccf09435c27497147acaddd11fcad298,
         type: 2}
       propertyPath: basePath
-      value: Audio\GeneratedSoundBanks
+      value: Audio/GeneratedSoundBanks
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccf09435c27497147acaddd11fcad298, type: 2}
