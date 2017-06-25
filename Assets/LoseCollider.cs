@@ -26,7 +26,18 @@ public class LoseCollider : MonoBehaviour {
 
     IEnumerator StartSceneLoad(float delay)
     {
+        UpdateMusic();
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("LoseScreen");
+    }
+
+    void UpdateMusic()
+    {
+        MusicLooper music = GameObject.Find("Music").GetComponent<MusicLooper>(); //Bad design
+        if (music != null)
+        {
+            music.PlayGameoverMusic();
+            music.EnableBirdSounds(false);
+        }
     }
 }

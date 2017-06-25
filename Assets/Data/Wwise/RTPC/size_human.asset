@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b042fd4c8120f34c82866181b198717, type: 3}
   m_Name: size_human
   m_EditorClassIdentifier: 
-  rtpcName: size_human
+  rtpcName: size_person
