@@ -38,9 +38,13 @@ public class TowerControl : MonoBehaviour
 
     private void Awake()
     {
-        towerCreekSound.Post(gameObject);
          _originalCenter = currentCenter;
         _moveSamples = new float[_maxMoveSamples];
+    }
+
+    private void Start()
+    {
+        towerCreekSound.Post(gameObject);
     }
 
     private void FixedUpdate()

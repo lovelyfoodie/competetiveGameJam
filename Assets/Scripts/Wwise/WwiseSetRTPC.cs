@@ -9,6 +9,10 @@ public class WwiseSetRTPC : ScriptableObject
     private float _min = float.MaxValue;
     private float _max = float.MinValue;
 
+    private void Awake()
+    {
+        ResetRangeTracker();
+    }
     public void SetValue(float value)
     {
         if (!string.IsNullOrEmpty(rtpcName))
@@ -25,5 +29,11 @@ public class WwiseSetRTPC : ScriptableObject
 
         _min = Mathf.Min(_min, value);
         _max = Mathf.Max(_max, value);
+    }
+
+    public void ResetRangeTracker()
+    {
+        _min = float.MaxValue;
+        _max = float.MinValue;
     }
 }

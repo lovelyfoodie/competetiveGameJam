@@ -33,3 +33,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset

@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4470507861287762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CenterOfGravity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 114595300869891062}
   - component: {fileID: 114732683443213488}
   - component: {fileID: 114206065824782942}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4154287082042606}
-  m_Layer: 0
+  - component: {fileID: 61662911523584362}
+  m_Layer: 9
   m_Name: PlayerPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +70,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4968771969173598}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpawnPointLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +85,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4760072042657938}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpawnPointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4462221524105546}
   - component: {fileID: 212982164382247690}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tower_fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4745539811809922}
   - component: {fileID: 212481234451319678}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +132,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4877337209614536}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,6 +270,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &61662911523584362
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077701654542218}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.025920868, y: -0.010368407}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.7522717, y: 0.24655735}
+  m_EdgeRadius: 0
 --- !u!70 &70103973418020700
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -325,6 +351,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCenter: {fileID: 4470507861287762}
   towerCreekSound: {fileID: 11400000, guid: 9c9612c9606303f4ead60e28dcaf77d8, type: 2}
+  towerCreekSoundStop: {fileID: 11400000, guid: d39402d5d788fe54d8587b80df7f51d7,
+    type: 2}
   towerVelocityChange: {fileID: 11400000, guid: 66cf8faa8b511bf46a8b276c76b67057,
     type: 2}
   towerDisplacementChange: {fileID: 11400000, guid: f29d2f47caf6daa458363ad172982cca,

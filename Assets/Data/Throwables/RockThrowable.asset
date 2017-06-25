@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   density: 2.6
   minSize: 0.5
-  maxSize: 2
+  maxSize: 1
   sizeDistribution:
     serializedVersion: 2
     m_Curve:

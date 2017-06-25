@@ -16,8 +16,21 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{07EE9310-BE81-4ADE-AEB4-245A3E741F99}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1748584036
     m_lastTimePart2: -1999324301
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
+>>>>>>> b6b37aeb2b0ed8c826a885de724943ede60ec781
     List:
     - Name: music_gameover
       Path: Default Work Unit\Music\music_gameover
@@ -195,13 +208,27 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4F00462A-585C-4C25-BAAF-9F312EF987DF}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 801364385
     m_lastTimePart2: -1999324306
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
+>>>>>>> b6b37aeb2b0ed8c826a885de724943ede60ec781
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3901F2CA-8D0B-4CA5-A344-C1869E23B34B}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1972301928
     m_lastTimePart2: -1999324306
     List:
@@ -234,19 +261,58 @@ MonoBehaviour:
       - bytes: 4aec090eeb420148a879c4e3726860f9
       - bytes: 69c897c541bf074dad7f0650dd796bb2
       - bytes: 0db78c7e0e544f41b149126acb2c3b89
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
+    List: []
+>>>>>>> b6b37aeb2b0ed8c826a885de724943ede60ec781
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F14D2FD3-2216-4429-901A-72030F89FE80}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 801329348
     m_lastTimePart2: -1999324306
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
+>>>>>>> b6b37aeb2b0ed8c826a885de724943ede60ec781
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5E50DEE8-092A-4E87-8417-F196D1B8B919}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 799588978
     m_lastTimePart2: -1999324306
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
+>>>>>>> b6b37aeb2b0ed8c826a885de724943ede60ec781
     List:
     - Name: GameJamSummer2017
       Path: Default Work Unit\GameJamSummer2017

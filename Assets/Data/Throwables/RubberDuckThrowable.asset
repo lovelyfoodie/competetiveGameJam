@@ -12,34 +12,34 @@ MonoBehaviour:
   m_Name: RubberDuckThrowable
   m_EditorClassIdentifier: 
   density: 0.2
-  minSize: 0.2
-  maxSize: 5
+  minSize: 0.8
+  maxSize: 3
   sizeDistribution:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
-      inSlope: -0.0007764623
-      outSlope: -0.0007764623
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 0.3320068
-      value: 0.99521637
-      inSlope: -0.060239345
-      outSlope: -0.060239345
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 0.56572807
-      value: 0.1333062
-      inSlope: -1.2540817
-      outSlope: -1.2540817
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 0.9970824
-      value: -0.0000002689776
+      value: 0
       inSlope: 0
       outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.80568326
+      value: 0.02578555
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.97856736
+      value: 0.21879388
+      inSlope: 4.5176597
+      outSlope: 4.5176597
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 12.352565
+      outSlope: 12.352565
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
