@@ -10,13 +10,17 @@ using System.Security.Cryptography;
 public class PlayerController : MonoBehaviour {
 
     public bool isTower1 = false;
-    public KeyCode fireKey;
+    public KeyCode fireLeft;
+    public KeyCode fireRight;
     public float throwTorque = 0.2f;
-    public Transform throwPoint;
+    public Transform throwPointLeft;
+    public Transform throwPointRight;
     public Transform holdPoint;
+    public Vector3 throwAngle = new Vector3(0, 0, 72f);
     public GameObject held;
-    [Tooltip("1f = left, -1f = right")]
-    public float direction = 1f;
+    //[Tooltip("1f = left, -1f = right")]
+    //public float direction = 1f;
+    public SpriteRenderer sprite;
 
 	private GameObject item;
 	private ThrowableSpawner spawner;
@@ -25,8 +29,8 @@ public class PlayerController : MonoBehaviour {
 
     void Awake()
     {
-        if(throwPoint == null)
-            throwPoint = GetComponent<Transform>();
+        //if(throwPoint == null)
+        //    throwPoint = GetComponent<Transform>();
 
         if (holdPoint == null)
             holdPoint = GetComponent<Transform>();
@@ -44,13 +48,20 @@ public class PlayerController : MonoBehaviour {
 		GameObject thrownItem;
 		Rigidbody2D thrownRigidBody;
 
-		if (Input.GetKeyDown (fireKey)) {
+        bool left = Input.GetKeyDown(fireLeft);
+        bool right = Input.GetKeyDown(fireRight);
+
+
+        if (left || right) {
+            float directionMod = left ? 1f : -1f;
+
+            // Sprite change.
+            sprite.flipX = right;
 
             // Get next throwable.
             thrownItem = held;
             thrownItem.transform.SetParent(null);
-            //thrownItem = spawner.GetThrowable();
-            thrownItem.transform.position = throwPoint.transform.position;
+            thrownItem.transform.position = left ? throwPointLeft.transform.position : throwPointRight.transform.position;
             thrownItem.transform.rotation = gameObject.transform.rotation;
 
             thrownItem.GetComponent<Collider2D>().enabled = true;
@@ -61,12 +72,17 @@ public class PlayerController : MonoBehaviour {
             // Physics.
             float objMass = thrownRigidBody.mass;
 			float thrust = objMass * ACCELERATION; 
-			thrownRigidBody.AddForce (transform.up * thrust);
+			//thrownRigidBody.AddForce (throwAngle * thrust * directionMod); //good
+            thrownRigidBody.AddForce(transform.up * thrust * directionMod);
             thrownRigidBody.AddTorque(Random.Range(-1f * throwTorque * thrust, throwTorque * thrust));
 
-            float angleOfRelease = transform.rotation.z;
-			float xForce = Mathf.Cos (angleOfRelease) * thrust * .1f * direction; 
-			tower.addForce (xForce);
+   //         float angleOfRelease = throwAngle.z * directionMod;
+   //         //float angleOfRelease = Quaternion.Euler(throwAngle).z * directionMod;
+   //         //float angleOfRelease = transform.rotation.z * directionMod;
+   //         float xForce = Mathf.Cos (angleOfRelease) * thrust * .1f; 
+			//tower.addForce (xForce);
+
+            tower.addForce(directionMod * thrust * .1f);
 
             thrownItem.GetComponent<Throwable>().Throw();
 
