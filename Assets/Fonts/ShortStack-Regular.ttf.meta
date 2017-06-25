@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a8472a3f91de547ebbe0279251c82c10
+timeCreated: 1498352921
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Short Stack
+  fontNames:
+  - Short Stack
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

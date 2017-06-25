@@ -13,14 +13,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
+  - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{07EE9310-BE81-4ADE-AEB4-245A3E741F99}'
-    m_lastTimePsrt1: -734202313
-    m_lastTimePart2: -1999324319
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
     List:
     - Name: throw_cow
-      Path: Default Work Unit\Throw Events\throw_cow
+      Path: Default Work Unit/Throw Events/throw_cow
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -32,7 +40,7 @@ MonoBehaviour:
       Guid: 4670f0f72ead034589f3ecb7c9dfa800
       maxAttenuation: 0
     - Name: throw_rock
-      Path: Default Work Unit\Throw Events\throw_rock
+      Path: Default Work Unit/Throw Events/throw_rock
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -44,7 +52,7 @@ MonoBehaviour:
       Guid: 1671a8e92bb5e04fbb6852b4f41b5b60
       maxAttenuation: 0
     - Name: throw_rubberduck
-      Path: Default Work Unit\Throw Events\throw_rubberduck
+      Path: Default Work Unit/Throw Events/throw_rubberduck
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -56,35 +64,67 @@ MonoBehaviour:
       Guid: fb6c4a89fcda2d4baa1c699db0617506
       maxAttenuation: 0
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4F00462A-585C-4C25-BAAF-9F312EF987DF}'
-    m_lastTimePsrt1: -919109159
-    m_lastTimePart2: -1999324323
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
     List: []
   StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
+  - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3901F2CA-8D0B-4CA5-A344-C1869E23B34B}'
-    m_lastTimePsrt1: -1514672576
-    m_lastTimePart2: -1999324327
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
+  - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F14D2FD3-2216-4429-901A-72030F89FE80}'
-    m_lastTimePsrt1: 1938800670
-    m_lastTimePart2: -1999324326
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
     List: []
   BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5E50DEE8-092A-4E87-8417-F196D1B8B919}'
-    m_lastTimePsrt1: -179579824
-    m_lastTimePart2: -1999324319
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1597140864
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+=======
+    m_lastTimePsrt1: -1587140864
+>>>>>>> origin/master
+    m_lastTimePart2: -1999324315
     List:
     - Name: GameJamSummer2017
-      Path: Default Work Unit\GameJamSummer2017
+      Path: Default Work Unit/GameJamSummer2017
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
