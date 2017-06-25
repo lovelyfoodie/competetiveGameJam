@@ -324,6 +324,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCenter: {fileID: 4470507861287762}
+  towerCreekSound: {fileID: 11400000, guid: 9c9612c9606303f4ead60e28dcaf77d8, type: 2}
+  towerVelocityChange: {fileID: 11400000, guid: 66cf8faa8b511bf46a8b276c76b67057,
+    type: 2}
+  towerDisplacementChange: {fileID: 11400000, guid: f29d2f47caf6daa458363ad172982cca,
+    type: 2}
 --- !u!212 &212481234451319678
 SpriteRenderer:
   m_ObjectHideFlags: 1

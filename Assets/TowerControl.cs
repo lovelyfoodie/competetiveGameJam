@@ -1,21 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TowerControl : MonoBehaviour
 {
     public Transform currentCenter;
+    
+    public WwisePostEvent towerCreekSound;
+    public WwiseSetRTPC towerVelocityChange;
+    public WwiseSetRTPC towerDisplacementChange;
+
     private Transform _originalCenter;
-    private float _prevDeflection = 0f;
+    private float _prevDisplacement = 0f;
+    private int _maxMoveSamples = 5;
+    private float[] _moveSamples;
+
+    //TODO IsFalling?
 
     public float Velocity
     {
         get
         {
-            return -1f; //TODO
+            return MoveSampleAverage();
         }
     }
-    public float Deflection
+    public float Displacement
     {
         get
         {
@@ -23,17 +33,48 @@ public class TowerControl : MonoBehaviour
         }
     }
 
+    //-----------------------------
+
     private void Awake()
     {
-         _originalCenter = currentCenter; 
+        towerCreekSound.Post(gameObject);
+         _originalCenter = currentCenter;
+        _moveSamples = new float[_maxMoveSamples];
     }
 
     private void FixedUpdate()
     {
-        if (_prevDeflection != Deflection)
+        if (_prevDisplacement != Displacement)
         {
-            _prevDeflection = Deflection;
+            float change = _prevDisplacement - Displacement;
+            AddMoveSample(change);
+
+            towerVelocityChange.SetValue(Velocity);
+            towerDisplacementChange.SetValue(Displacement);
+
+            _prevDisplacement = Displacement;
         }
     }
-    
+
+    //-----------------------------
+
+    private void AddMoveSample(float amount)
+    {
+        for (int i = _maxMoveSamples - 1; i > 0; i--)
+        {
+            _moveSamples[i] = _moveSamples[i - 1];
+        }
+        _moveSamples[0] = amount;
+    }
+    private float MoveSampleAverage()
+    {
+        float sum = 0f;
+        foreach (var item in _moveSamples)
+        {
+            sum += item;
+        }
+        return sum / _maxMoveSamples;
+    }
+
 }
+
