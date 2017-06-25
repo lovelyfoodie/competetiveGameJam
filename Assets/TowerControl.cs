@@ -12,7 +12,7 @@ public class TowerControl : MonoBehaviour
     public WwiseSetRTPC towerVelocityChange;
     public WwiseSetRTPC towerDisplacementChange;
 
-    private Transform _originalCenter;
+    private Vector3 _originalCenterPosition;
     private float _prevDisplacement = 0f;
     private int _maxMoveSamples = 5;
     private float[] _moveSamples;
@@ -23,14 +23,14 @@ public class TowerControl : MonoBehaviour
     {
         get
         {
-            return MoveSampleAverage();
+            return MoveSampleAverage() * 100;
         }
     }
     public float Displacement
     {
         get
         {
-            return (_originalCenter.position - currentCenter.position).magnitude;
+            return (_originalCenterPosition - currentCenter.position).magnitude;
         }
     }
 
@@ -38,7 +38,9 @@ public class TowerControl : MonoBehaviour
 
     private void Awake()
     {
-         _originalCenter = currentCenter;
+        towerVelocityChange.ResetRangeTracker();
+        towerDisplacementChange.ResetRangeTracker();
+        _originalCenterPosition = currentCenter.position;
         _moveSamples = new float[_maxMoveSamples];
     }
 
@@ -53,6 +55,9 @@ public class TowerControl : MonoBehaviour
         {
             float change = _prevDisplacement - Displacement;
             AddMoveSample(change);
+
+            //towerVelocityChange.SetValue(100, gameObject);
+            //towerDisplacementChange.SetValue(100, gameObject);
 
             towerVelocityChange.SetValue(Velocity, gameObject);
             towerDisplacementChange.SetValue(Displacement, gameObject);

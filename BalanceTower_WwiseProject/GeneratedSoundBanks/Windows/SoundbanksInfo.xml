@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>

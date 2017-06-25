@@ -18,8 +18,8 @@ public class LoseCollider : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log (other.transform.name);
-		if (other.transform.name.Equals ("PlayerPlatform")) {
+		//Debug.Log (other.transform.name);
+		if (other.transform.name.Equals ("CenterOfGravity")) {
 			timer.Stop ();
 			//TODO check if top score against PlayerPrefs
 			PlayerPrefs.SetString("FinalScore",timer.GetComponent<Text>().text);

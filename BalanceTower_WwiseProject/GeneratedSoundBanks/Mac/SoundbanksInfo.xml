@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
