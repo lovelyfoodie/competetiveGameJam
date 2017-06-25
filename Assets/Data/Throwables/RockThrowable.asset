@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: RockThrowable
   m_EditorClassIdentifier: 
   density: 2.6
-  minSize: 0.5
-  maxSize: 1
+  minSize: 0.2
+  maxSize: 0.7
   sizeDistribution:
     serializedVersion: 2
     m_Curve:

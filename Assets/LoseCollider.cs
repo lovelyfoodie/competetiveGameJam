@@ -33,7 +33,11 @@ public class LoseCollider : MonoBehaviour {
 
     void UpdateMusic()
     {
-        MusicLooper music = GameObject.Find("Music").GetComponent<MusicLooper>(); //Bad design
+        GameObject go = GameObject.Find("Music");
+        if (!go)
+            return;
+
+        MusicLooper music = go.GetComponent<MusicLooper>(); //Bad design
         if (music != null)
         {
             music.PlayGameoverMusic();
