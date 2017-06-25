@@ -8,8 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75c3764e86165c8449c4ee1da9ac3b90, type: 3}
-  m_Name: RockThrowable
+  m_Script: {fileID: 11500000, guid: 1b042fd4c8120f34c82866181b198717, type: 3}
+  m_Name: deflection_tower_left
   m_EditorClassIdentifier: 
-  density: 2.6
-  onThownSound: {fileID: 11400000, guid: 54e23b34ee995a646aa4638296afaff8, type: 2}
+  rtpcName: deflection_tower_left

@@ -119,6 +119,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: b5be15365a8bdef46bcb5dc9d3ad4afc, type: 2}
+  OnThrown:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!212 &212085385595508444
 SpriteRenderer:
   m_ObjectHideFlags: 1

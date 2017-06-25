@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75c3764e86165c8449c4ee1da9ac3b90, type: 3}
-  m_Name: RockThrowable
+  m_Script: {fileID: 11500000, guid: 3ec7e22a027371540948c21267dfcd3a, type: 3}
+  m_Name: throw_cow
   m_EditorClassIdentifier: 
-  density: 2.6
-  onThownSound: {fileID: 11400000, guid: 54e23b34ee995a646aa4638296afaff8, type: 2}
+  isEnabled: 0
+  eventName: throw_cow

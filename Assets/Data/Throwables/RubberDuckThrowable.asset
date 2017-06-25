@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: RubberDuckThrowable
   m_EditorClassIdentifier: 
   density: 0.2
+  onThownSound: {fileID: 11400000, guid: a0ceefc952e7d1d4580650c0b5ac5d80, type: 2}

@@ -6,6 +6,7 @@ public class TowerControl : MonoBehaviour
 {
     public Transform currentCenter;
     private Transform _originalCenter;
+    private float _prevDeflection = 0f;
 
     public float Velocity
     {
@@ -25,6 +26,14 @@ public class TowerControl : MonoBehaviour
     private void Awake()
     {
          _originalCenter = currentCenter; 
+    }
+
+    private void FixedUpdate()
+    {
+        if (_prevDeflection != Deflection)
+        {
+            _prevDeflection = Deflection;
+        }
     }
     
 }
