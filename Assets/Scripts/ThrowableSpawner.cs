@@ -37,19 +37,33 @@ public class ThrowableSpawner : MonoBehaviour
         Init();
     }
 
-    public GameObject GetThrowable()
+    public GameObject Peek(int numAhead)
     {
-        Random.InitState(_seed + _spawnCount);
+        Random.InitState(_seed + _spawnCount + numAhead);
         int index = Random.Range(0, _throwables.Count);
 
-        GameObject throwable = _throwables[index];
-        _throwables.Remove(throwable);
-        _throwables.Add(throwable);
-
+        return _throwables[index];
+    }
+    public GameObject GetThrowable()
+    {
+        GameObject throwable = Peek(0);
         _spawnCount++;
 
         return throwable;
     }
+    //public GameObject GetThrowable()
+    //{
+    //    Random.InitState(_seed + _spawnCount);
+    //    int index = Random.Range(0, _throwables.Count);
+
+    //    GameObject throwable = _throwables[index];
+    //    _throwables.Remove(throwable);
+    //    _throwables.Add(throwable);
+
+    //    _spawnCount++;
+
+    //    return throwable;
+    //}
 }
 
 
