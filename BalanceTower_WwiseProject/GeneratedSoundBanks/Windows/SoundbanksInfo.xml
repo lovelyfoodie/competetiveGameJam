@@ -16,6 +16,18 @@
 			<ShortName>GameJamSummer2017</ShortName>
 			<Path>GameJamSummer2017.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2897915005" Name="music_gameover" ObjectPath="\Events\Default Work Unit\Music\music_gameover"/>
+				<Event Id="1696404602" Name="music_mute" ObjectPath="\Events\Default Work Unit\Music\music_mute"/>
+				<Event Id="2895066125" Name="music_pause" ObjectPath="\Events\Default Work Unit\Music\music_pause"/>
+				<Event Id="3366340267" Name="music_play_menu" ObjectPath="\Events\Default Work Unit\Music\music_play_menu"/>
+				<Event Id="4018292301" Name="music_setstate_gameplay" ObjectPath="\Events\Default Work Unit\Music\music_setstate_gameplay"/>
+				<Event Id="1868184033" Name="music_stop_all" ObjectPath="\Events\Default Work Unit\Music\music_stop_all"/>
+				<Event Id="2132259803" Name="music_unmute" ObjectPath="\Events\Default Work Unit\Music\music_unmute"/>
+				<Event Id="80529422" Name="music_unpause" ObjectPath="\Events\Default Work Unit\Music\music_unpause"/>
+				<Event Id="1602866773" Name="play_tower_lean_loop" ObjectPath="\Events\Default Work Unit\play_tower_lean_loop"/>
+				<Event Id="2835551186" Name="sfx_mute" ObjectPath="\Events\Default Work Unit\sfx_mute"/>
+				<Event Id="1305045635" Name="sfx_unmute" ObjectPath="\Events\Default Work Unit\sfx_unmute"/>
+				<Event Id="2083153279" Name="stop_tower_lean_loop" ObjectPath="\Events\Default Work Unit\stop_tower_lean_loop"/>
 				<Event Id="3115441195" Name="throw_cow" ObjectPath="\Events\Default Work Unit\Throw Events\throw_cow"/>
 				<Event Id="1207426921" Name="throw_rock" ObjectPath="\Events\Default Work Unit\Throw Events\throw_rock"/>
 				<Event Id="4038429815" Name="throw_rubberduck" ObjectPath="\Events\Default Work Unit\Throw Events\throw_rubberduck"/>
@@ -24,6 +36,10 @@
 				<File Id="50754923" Language="SFX">
 					<ShortName>throw_base_03.wav</ShortName>
 					<Path>SFX\throw_base_03_9E69E797.wem</Path>
+				</File>
+				<File Id="59895823" Language="SFX">
+					<ShortName>music_ending_01.wav</ShortName>
+					<Path>SFX\music_ending_01_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="294560458" Language="SFX">
 					<ShortName>throw_rock_03.wav</ShortName>
@@ -40,6 +56,10 @@
 				<File Id="393328683" Language="SFX">
 					<ShortName>throw_base_04.wav</ShortName>
 					<Path>SFX\throw_base_04_9E69E797.wem</Path>
+				</File>
+				<File Id="402518213" Language="SFX">
+					<ShortName>tower_lean_woodcreak_loop.wav</ShortName>
+					<Path>SFX\tower_lean_woodcreak_loop_9E69E797.wem</Path>
 				</File>
 				<File Id="406704523" Language="SFX">
 					<ShortName>throw_cow_bell_01.wav</ShortName>
@@ -73,6 +93,10 @@
 					<ShortName>throw_cow_moo_04.wav</ShortName>
 					<Path>SFX\throw_cow_moo_04_9E69E797.wem</Path>
 				</File>
+				<File Id="760154812" Language="SFX">
+					<ShortName>music_main_loop.wav</ShortName>
+					<Path>SFX\music_main_loop_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="781255647" Language="SFX">
 					<ShortName>throw_rock_01.wav</ShortName>
 					<Path>SFX\throw_rock_01_9E69E797.wem</Path>
@@ -85,9 +109,17 @@
 					<ShortName>throw_cow_bell_02.wav</ShortName>
 					<Path>SFX\throw_cow_bell_02_9E69E797.wem</Path>
 				</File>
+				<File Id="882148558" Language="SFX">
+					<ShortName>tower_lean_sweetener_loop.wav</ShortName>
+					<Path>SFX\tower_lean_sweetener_loop_9E69E797.wem</Path>
+				</File>
 				<File Id="904417328" Language="SFX">
 					<ShortName>throw_base_01.wav</ShortName>
 					<Path>SFX\throw_base_01_9E69E797.wem</Path>
+				</File>
+				<File Id="1054428328" Language="SFX">
+					<ShortName>music_menu_loop.wav</ShortName>
+					<Path>SFX\music_menu_loop_4B8CC0C5.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -8,6 +8,26 @@ public class Throwable : MonoBehaviour {
     public ThrowableData data;
     public UnityEvent OnThrown;
 
+    private float _size = 1f;
+    public float Size
+    {
+        get
+        {
+            return _size;
+        }
+        set
+        {
+            _size = value;
+
+            if (data.thrownObjectSize != null)
+            {
+                data.thrownObjectSize.SetValue(value, gameObject);
+            }
+
+            gameObject.transform.localScale = new Vector3(value, value, value);
+        }
+    }
+
     public float Area
     {
         get
@@ -65,9 +85,9 @@ public class Throwable : MonoBehaviour {
 
     public void Throw()
     {
-        if (data.onThownSound != null)
+        if (data.onThrownSound != null)
         {
-            data.onThownSound.Post(gameObject);
+            data.onThrownSound.Post(gameObject);
         }
 
         OnThrown.Invoke();

@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2099141878" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="799692999" DateHigh="30600509"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="801924491" DateHigh="30600509"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Attenuations\Default Work Unit.wwu" DateLow="2100903366" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Audio Devices\Default Work Unit.wwu" DateLow="2100603166" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Control Surface Sessions\Default Work Unit.wwu" DateLow="2100553123" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Conversion Settings\Default Work Unit.wwu" DateLow="2100112845" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Conversion Settings\Factory Conversion Settings.wwu" DateLow="800173332" DateHigh="30600509"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Dynamic Dialogue\Default Work Unit.wwu" DateLow="2100708241" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Effects\Default Work Unit.wwu" DateLow="2100172870" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Effects\Factory Effects.wwu" DateLow="804025889" DateHigh="30600509"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Events\Default Work Unit.wwu" DateLow="2099662539" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Game Parameters\Default Work Unit.wwu" DateLow="2100658204" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="803715695" DateHigh="30600509"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GameJamSummer2017.wproj" DateLow="2098881734" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2100277951" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2099026829" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Mixing Sessions\Default Work Unit.wwu" DateLow="2100227911" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Modulators\Default Work Unit.wwu" DateLow="2100803305" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Presets\Default Work Unit.wwu" DateLow="2100332980" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Queries\Default Work Unit.wwu" DateLow="2100753269" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Queries\Factory Queries.wwu" DateLow="800213347" DateHigh="30600509"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\SoundBanks\Default Work Unit.wwu" DateLow="2099947736" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2100853333" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\States\Default Work Unit.wwu" DateLow="2099882679" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Switches\Default Work Unit.wwu" DateLow="2099787620" DateHigh="30600512"/>
-	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Triggers\Default Work Unit.wwu" DateLow="2100393020" DateHigh="30600512"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2642442025" DateHigh="30600540"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="222930111" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="221675045" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Attenuations\Default Work Unit.wwu" DateLow="223350394" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Audio Devices\Default Work Unit.wwu" DateLow="223455457" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Control Surface Sessions\Default Work Unit.wwu" DateLow="223970799" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Conversion Settings\Default Work Unit.wwu" DateLow="222105344" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Conversion Settings\Factory Conversion Settings.wwu" DateLow="222170386" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Dynamic Dialogue\Default Work Unit.wwu" DateLow="223390415" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Effects\Default Work Unit.wwu" DateLow="222005268" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Effects\Factory Effects.wwu" DateLow="223585541" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Events\Default Work Unit.wwu" DateLow="1968159132" DateHigh="30600540"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Game Parameters\Default Work Unit.wwu" DateLow="221830156" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="222050300" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GameJamSummer2017.Joe.wsettings" DateLow="4294718575" DateHigh="30600540"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GameJamSummer2017.wproj" DateLow="221249766" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4070896689" DateHigh="30600540"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="223140257" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Mixing Sessions\Default Work Unit.wwu" DateLow="223885732" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Modulators\Default Work Unit.wwu" DateLow="223825713" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Presets\Default Work Unit.wwu" DateLow="223925864" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Queries\Default Work Unit.wwu" DateLow="224040852" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Queries\Factory Queries.wwu" DateLow="223740637" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\SoundBanks\Default Work Unit.wwu" DateLow="221364850" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Soundcaster Sessions\Default Work Unit.wwu" DateLow="4070726591" DateHigh="30600540"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\States\Default Work Unit.wwu" DateLow="1744441240" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Switches\Default Work Unit.wwu" DateLow="223105220" DateHigh="30600535"/>
+	<ValidationCacheItem File="C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\Triggers\Default Work Unit.wwu" DateLow="223670590" DateHigh="30600535"/>
 </ValidationCache>

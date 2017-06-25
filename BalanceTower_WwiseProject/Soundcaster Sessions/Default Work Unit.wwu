@@ -4,6 +4,32 @@
 		<WorkUnit Name="Default Work Unit" ID="{B1491360-3080-4FE6-98E9-7C8014177486}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="Debug" ID="{6D614B53-7CA9-410F-A878-85E5EDFD7644}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="music_play_menu" ID="{30CAF07E-4490-43EB-9377-5E5B0AD24C45}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="throw_cow" ID="{F7F07046-AD2E-4503-89F3-ECB7C9DFA800}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="music_setstate_gameplay" ID="{8B63516E-81DF-497B-8EF3-EABBDA749A9C}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="throw_rock" ID="{E9A87116-B52B-4FE0-BB68-52B4F41B5B60}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="music_gameover" ID="{37DFFB03-70F3-44F2-99E7-5FEC88DDA009}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="throw_rubberduck" ID="{894A6CFB-DAFC-4B2D-AA1C-699DB0617506}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
@@ -16,6 +42,14 @@
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
 							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="tower_velocity" ID="{50C524C4-3C38-4558-AD90-D5D6329FCE9F}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="tower_deflection" ID="{DBBDEF4B-C0C1-464B-B443-17BC5CC74820}"/>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
@@ -58,7 +92,9 @@
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Menu_Loop" ID="{C597C869-BF41-4D07-AD7F-0650DD796BB2}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

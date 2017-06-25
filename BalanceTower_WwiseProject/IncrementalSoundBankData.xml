@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <IncrementalBankBuild Version="6" Flags="601859981">
-	<Platform GUID="{4D234B64-385A-49DC-A326-F66BE9DCED1B}">
+	<Platform GUID="{368C44F5-3507-448C-985E-53A0F2D56B34}">
 		<Banks>
 			<Language ID="0">
-				<File Name="GameJamSummer2017" Hash="350112159" Timestamp="131428248268638242"/>
-				<File Name="Init" Hash="1409234933" Timestamp="131428248268953451"/>
+				<File Name="GameJamSummer2017" Hash="1006955421" Timestamp="131428322901846373"/>
+				<File Name="Init" Hash="2274007369" Timestamp="131428306326668054"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3591202699" Timestamp="131428248269093545"/>
+				<File Name="" Hash="3216179157" Timestamp="131428322902026481"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{4D234B64-385A-49DC-A326-F66BE9DCED1B}">
+		<Banks>
+			<Language ID="0">
+				<File Name="GameJamSummer2017" Hash="1006955421" Timestamp="131428322905132426"/>
+				<File Name="Init" Hash="3659515659" Timestamp="131428306346486482"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="1231158735" Timestamp="131428322905262525"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

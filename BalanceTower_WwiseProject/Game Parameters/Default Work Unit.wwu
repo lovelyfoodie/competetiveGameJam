@@ -18,6 +18,20 @@
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
+				<Folder Name="tower" ID="{E87A6397-1B82-4CBA-9BF5-240644F02476}" ShortID="257479845">
+					<ChildrenList>
+						<GameParameter Name="tower_deflection" ID="{DBBDEF4B-C0C1-464B-B443-17BC5CC74820}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="tower_velocity" ID="{50C524C4-3C38-4558-AD90-D5D6329FCE9F}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

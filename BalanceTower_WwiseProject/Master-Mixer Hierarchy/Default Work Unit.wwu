@@ -10,6 +10,7 @@
 							<ChildrenList>
 								<Bus Name="Throwables" ID="{52BDF178-9F06-4A49-9B5C-FF8C8015532F}"/>
 								<Bus Name="Base_Throwable" ID="{886A33D1-B757-425B-8F50-3B7276362CF9}"/>
+								<Bus Name="Tower" ID="{540CCB15-1B5E-406A-9185-268570CABEB9}"/>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="UI" ID="{250AB565-795F-4C90-82C2-0E92B7D183E8}"/>

@@ -544,6 +544,180 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<ActorMixer Name="Tower" ID="{5FAEE8D0-FEF3-47EE-9F0B-2751C49F3888}" ShortID="198606054">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Tower" ID="{540CCB15-1B5E-406A-9185-268570CABEB9}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Tower_Lean_Sweetener_Loop" ID="{7AAE805C-44B3-43C3-BD3A-C32F7CE7F5A3}" ShortID="558601408">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{FA4B7C64-825D-4AF9-AFAF-AC3D5026C7D8}" ShortID="657124077">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="tower_deflection" ID="{DBBDEF4B-C0C1-464B-B443-17BC5CC74820}" WorkUnitID="{9AB66AE5-232B-474A-AC7C-B1AB36621412}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5C9ED906-4835-4FA7-BC58-87B94682A3A2}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-1250</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{E56947AB-B295-4FC9-A689-194C082DC7F2}" ShortID="322892031">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="tower_velocity" ID="{50C524C4-3C38-4558-AD90-D5D6329FCE9F}" WorkUnitID="{9AB66AE5-232B-474A-AC7C-B1AB36621412}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6E6403E3-CB47-45FF-AA27-4CACA861F35B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="tower_lean_sweetener_loop" ID="{3DA7A21D-9C90-4931-924F-318A1266ACA6}" ShortID="344857403" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tower_lean_sweetener_loop" ID="{A11BE9FA-DD9C-440F-B345-D68C52288E5B}" ShortID="882148558">
+											<Language>SFX</Language>
+											<AudioFile>tower_lean_sweetener_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="tower_lean_sweetener_loop" ID="{A11BE9FA-DD9C-440F-B345-D68C52288E5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Tower_Lean_Woodcreak_Loop" ID="{F6C97410-46CA-4ED6-996C-E35E2C8A82C2}" ShortID="255212328">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{F13F8E91-97B2-4E3A-9323-FA1611853AC2}" ShortID="899878692">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="tower_velocity" ID="{50C524C4-3C38-4558-AD90-D5D6329FCE9F}" WorkUnitID="{9AB66AE5-232B-474A-AC7C-B1AB36621412}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{12293E23-3D16-45F5-B63D-A43C34FC15E8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="tower_lean_woodcreak_loop" ID="{2250D508-11F3-4C4F-A812-64DC196F8C76}" ShortID="588429571" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F5F69E31-D0F0-4DCC-86CF-E8E5A54F9501}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tower_lean_woodcreak_loop" ID="{D7101A56-72F5-4BD0-AC0D-1261BFDFCAE0}" ShortID="402518213">
+											<Language>SFX</Language>
+											<AudioFile>tower_lean_woodcreak_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="tower_lean_woodcreak_loop" ID="{D7101A56-72F5-4BD0-AC0D-1261BFDFCAE0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

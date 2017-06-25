@@ -8,6 +8,7 @@ public class TowerControl : MonoBehaviour
     public Transform currentCenter;
     
     public WwisePostEvent towerCreekSound;
+    public WwisePostEvent towerCreekSoundStop;
     public WwiseSetRTPC towerVelocityChange;
     public WwiseSetRTPC towerDisplacementChange;
 
@@ -49,8 +50,8 @@ public class TowerControl : MonoBehaviour
             float change = _prevDisplacement - Displacement;
             AddMoveSample(change);
 
-            towerVelocityChange.SetValue(Velocity);
-            towerDisplacementChange.SetValue(Displacement);
+            towerVelocityChange.SetValue(Velocity, gameObject);
+            towerDisplacementChange.SetValue(Displacement, gameObject);
 
             _prevDisplacement = Displacement;
         }
@@ -75,6 +76,9 @@ public class TowerControl : MonoBehaviour
         }
         return sum / _maxMoveSamples;
     }
-
+    public void Kill()
+    {
+        towerCreekSoundStop.Post(gameObject);
+    }
 }
 

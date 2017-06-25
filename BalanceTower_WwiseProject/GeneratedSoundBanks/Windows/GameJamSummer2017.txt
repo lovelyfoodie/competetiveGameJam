@@ -1,28 +1,54 @@
 Event	ID	Name			Wwise Object Path	Notes
+	80529422	music_unpause			\Default Work Unit\Music\music_unpause	
 	1207426921	throw_rock			\Default Work Unit\Throw Events\throw_rock	
+	1305045635	sfx_unmute			\Default Work Unit\sfx_unmute	
+	1602866773	play_tower_lean_loop			\Default Work Unit\play_tower_lean_loop	
+	1696404602	music_mute			\Default Work Unit\Music\music_mute	
+	1868184033	music_stop_all			\Default Work Unit\Music\music_stop_all	
+	2083153279	stop_tower_lean_loop			\Default Work Unit\stop_tower_lean_loop	
+	2132259803	music_unmute			\Default Work Unit\Music\music_unmute	
+	2835551186	sfx_mute			\Default Work Unit\sfx_mute	
+	2895066125	music_pause			\Default Work Unit\Music\music_pause	
+	2897915005	music_gameover			\Default Work Unit\Music\music_gameover	
 	3115441195	throw_cow			\Default Work Unit\Throw Events\throw_cow	
+	3366340267	music_play_menu			\Default Work Unit\Music\music_play_menu	
+	4018292301	music_setstate_gameplay			\Default Work Unit\Music\music_setstate_gameplay	
 	4038429815	throw_rubberduck			\Default Work Unit\Throw Events\throw_rubberduck	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music			
+	3323273505	Menu_Loop	Music			
+	3907706366	Gameplay_Loop	Music			
+	3966194980	Ending	Music			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	390094722	size_cow			\Default Work Unit\size_cow	
 	2052870438	size_rock			\Default Work Unit\size_rock	
 	3191294052	size_rubberduck			\Default Work Unit\size_rubberduck	
+	3224109358	tower_deflection			\Default Work Unit\tower\tower_deflection	
+	4157244170	tower_velocity			\Default Work Unit\tower\tower_velocity	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	1685527054	MX			\Default Work Unit\Master Audio Bus\MX	
+	1737926756	Tower			\Default Work Unit\Master Audio Bus\SFX\Tower	
 	2376339987	Base_Throwable			\Default Work Unit\Master Audio Bus\SFX\Base_Throwable	
 	3185637426	Throwables			\Default Work Unit\Master Audio Bus\SFX\Throwables	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	50754923	throw_base_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_base_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Base_Throw\throw_base_03		49974
+	59895823	music_ending_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\music_ending_01_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Flow\Ending\music_ending_01\music_ending_01		929508
 	294560458	throw_rock_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_rock_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Rock\throw_rock_03		82978
 	315265771	throw_rock_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_rock_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Rock\throw_rock_02		74522
 	316579585	throw_rubberduck_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_rubberduck_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\RubberDuck\throw_rubberduck_01		89720
 	393328683	throw_base_04	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_base_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Base_Throw\throw_base_04		52360
+	402518213	tower_lean_woodcreak_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\tower_lean_woodcreak_loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Tower_Lean_Woodcreak_Loop\tower_lean_woodcreak_loop		555682
 	406704523	throw_cow_bell_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_cow_bell_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Bell\throw_cow_bell_01		161848
 	453501422	throw_rubberduck_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_rubberduck_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\RubberDuck\throw_rubberduck_02		78674
 	586500131	throw_base_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_base_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Base_Throw\throw_base_02		45662
@@ -31,8 +57,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	697489298	throw_cow_bell_03	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_cow_bell_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Bell\throw_cow_bell_03		168944
 	698212520	throw_cow_moo_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_cow_moo_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Moo\throw_cow_moo_01		105110
 	706876863	throw_cow_moo_04	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_cow_moo_04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Moo\throw_cow_moo_04		113326
+	760154812	music_main_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\music_main_loop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Flow\Gameplay\music_main_loop\music_main_loop		25173192
 	781255647	throw_rock_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_rock_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Rock\throw_rock_01		82214
 	812711203	throw_cow_moo_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_cow_moo_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Moo\throw_cow_moo_02		97024
 	836285372	throw_cow_bell_02	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_cow_bell_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Throwables\Cow\Cow_Bell\throw_cow_bell_02		164742
+	882148558	tower_lean_sweetener_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\tower_lean_sweetener_loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Tower_Lean_Sweetener_Loop\tower_lean_sweetener_loop		67966
 	904417328	throw_base_01	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\throw_base_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Base_Throw\throw_base_01		39650
+	1054428328	music_menu_loop	C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\SFX\music_menu_loop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Main_Flow\Menu\music_menu_loop\music_menu_loop		3456316
 

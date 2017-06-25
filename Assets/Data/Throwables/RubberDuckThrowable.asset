@@ -12,4 +12,37 @@ MonoBehaviour:
   m_Name: RubberDuckThrowable
   m_EditorClassIdentifier: 
   density: 0.2
-  onThownSound: {fileID: 11400000, guid: a0ceefc952e7d1d4580650c0b5ac5d80, type: 2}
+  minSize: 0.2
+  maxSize: 5
+  sizeDistribution:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: -0.0007764623
+      outSlope: -0.0007764623
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.3320068
+      value: 0.99521637
+      inSlope: -0.060239345
+      outSlope: -0.060239345
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.56572807
+      value: 0.1333062
+      inSlope: -1.2540817
+      outSlope: -1.2540817
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.9970824
+      value: -0.0000002689776
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  onThrownSound: {fileID: 11400000, guid: a0ceefc952e7d1d4580650c0b5ac5d80, type: 2}
+  thrownObjectSize: {fileID: 11400000, guid: f2c0550951f6e4d44984450ccb14bae3, type: 2}

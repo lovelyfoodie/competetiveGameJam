@@ -12,4 +12,25 @@ MonoBehaviour:
   m_Name: RockThrowable
   m_EditorClassIdentifier: 
   density: 2.6
-  onThownSound: {fileID: 11400000, guid: 54e23b34ee995a646aa4638296afaff8, type: 2}
+  minSize: 0.5
+  maxSize: 2
+  sizeDistribution:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  onThrownSound: {fileID: 11400000, guid: 54e23b34ee995a646aa4638296afaff8, type: 2}
+  thrownObjectSize: {fileID: 11400000, guid: 186e90c4a5b5f264da00f17d02af660f, type: 2}

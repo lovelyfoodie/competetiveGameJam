@@ -68,6 +68,192 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="play_tower_lean_loop" ID="{0468497A-70EC-4A02-8E42-067ECEAD2EE9}">
+					<ChildrenList>
+						<Action Name="Play" ID="{231D40CC-0F64-4BDE-922C-4EEB65DB4DC0}" ShortID="851612344" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{083F30AE-3337-4C9B-9C83-9C7C1538CE9F}" Global="false">
+									<ObjectRef Name="Tower_Lean_Sweetener_Loop" ID="{7AAE805C-44B3-43C3-BD3A-C32F7CE7F5A3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{46180F0C-1BD2-4B1C-874C-CD2BB98B34C7}" ShortID="103230499" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{BBDDEEEB-2B0E-413F-8A51-94AD2D7B08ED}" Global="false">
+									<ObjectRef Name="Tower_Lean_Woodcreak_Loop" ID="{F6C97410-46CA-4ED6-996C-E35E2C8A82C2}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="stop_tower_lean_loop" ID="{FA252A83-7334-4D20-853C-FA2A2045E3D4}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{80F0E837-FB93-479E-8178-8E11ABE39F56}" ShortID="533170371" Type="Stop" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{4B64E5F5-6F09-4802-B69C-B748AB9711AA}" Global="true">
+									<ObjectRef Name="Tower_Lean_Sweetener_Loop" ID="{7AAE805C-44B3-43C3-BD3A-C32F7CE7F5A3}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{F9BEA0A7-A277-4159-8215-8947768A4DC8}" ShortID="438703460" Type="Stop" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{6AF2C18B-2047-4EBC-96C5-1A0A731B00CA}" Global="true">
+									<ObjectRef Name="Tower_Lean_Woodcreak_Loop" ID="{F6C97410-46CA-4ED6-996C-E35E2C8A82C2}" WorkUnitID="{6D83A07D-DB34-49E1-8A9B-6492A65CDCCC}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Music" ID="{15B00FA8-F571-4E62-AF18-C28C73D808B7}" ShortID="587971162">
+					<ChildrenList>
+						<Event Name="music_stop_all" ID="{99C88314-3B08-4750-805D-217E69E40E07}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{399A4591-3513-49FB-9B97-6446344CE97F}" ShortID="334363179" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{5A9CDFDD-45D1-4300-ACCC-100D036DA8AA}" Global="true">
+											<ObjectRef Name="Main_Flow" ID="{2316F985-ADF3-4319-A041-5459435FF84F}" WorkUnitID="{13E54FF0-C611-44E7-9FD7-E0E50CEF075B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_play_menu" ID="{30CAF07E-4490-43EB-9377-5E5B0AD24C45}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{4592A817-EF43-4E6B-84A0-528DFCEA94C1}" ShortID="432254979" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="Music" ID="{719AC436-54B7-4081-B0D0-D742EA4D8EC2}"/>
+										<GroupItem Name="Menu_Loop" ID="{C597C869-BF41-4D07-AD7F-0650DD796BB2}"/>
+									</SetItemParam>
+								</Action>
+								<Action Name="Play" ID="{B9C1A75F-4E9A-4416-A456-5D2C1B39529D}" ShortID="337500618" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{CC90C27C-B680-4179-9E91-B051571C7D6C}" Global="false">
+											<ObjectRef Name="Main_Flow" ID="{2316F985-ADF3-4319-A041-5459435FF84F}" WorkUnitID="{13E54FF0-C611-44E7-9FD7-E0E50CEF075B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_pause" ID="{3BB2CA26-4E21-409B-BB55-F5BD7CDB8EFE}">
+							<ChildrenList>
+								<Action Name="Pause" ID="{2F5F9C32-5AF3-4C3D-A4AD-1C80BEFCE9BE}" ShortID="494998474" Type="Pause" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A9984E53-1086-41E5-8A53-E4600D5989FE}" Global="false">
+											<ObjectRef Name="Main_Flow" ID="{2316F985-ADF3-4319-A041-5459435FF84F}" WorkUnitID="{13E54FF0-C611-44E7-9FD7-E0E50CEF075B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_gameover" ID="{37DFFB03-70F3-44F2-99E7-5FEC88DDA009}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{0BDF2881-4F90-4791-9EC0-81A12473628D}" ShortID="421016045" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="Music" ID="{719AC436-54B7-4081-B0D0-D742EA4D8EC2}"/>
+										<GroupItem Name="Ending" ID="{F49E77AE-A469-4C3E-B4B1-2E28B84FCF52}"/>
+									</SetItemParam>
+								</Action>
+								<Action Name="Set State" ID="{86756D6C-896B-4F28-A857-34AA6BBF2BAB}" ShortID="179074280" Type="SetState" Scope="All" Global="true">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<SetItemParam>
+										<Group Name="Music" ID="{719AC436-54B7-4081-B0D0-D742EA4D8EC2}"/>
+										<GroupItem Name="Menu_Loop" ID="{C597C869-BF41-4D07-AD7F-0650DD796BB2}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_setstate_gameplay" ID="{8B63516E-81DF-497B-8EF3-EABBDA749A9C}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{E43C1373-754F-4D1C-997C-5E0D2439CB3C}" ShortID="701407478" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="Music" ID="{719AC436-54B7-4081-B0D0-D742EA4D8EC2}"/>
+										<GroupItem Name="Gameplay_Loop" ID="{0E09EC4A-42EB-4801-A879-C4E3726860F9}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_unpause" ID="{BA99D0DB-8E6B-4498-BBB2-AF9F175337DE}">
+							<ChildrenList>
+								<Action Name="Resume" ID="{C97930F9-6DB1-4789-B241-2CF2E3A8C970}" ShortID="668250691" Type="Resume" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{D7FD486A-DFCC-4027-9482-0945970EEA42}" Global="false">
+											<ObjectRef Name="Main_Flow" ID="{2316F985-ADF3-4319-A041-5459435FF84F}" WorkUnitID="{13E54FF0-C611-44E7-9FD7-E0E50CEF075B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_mute" ID="{C534EE08-BD41-411A-B837-EAC20DD3EE89}">
+							<ChildrenList>
+								<Action Name="Set Bus Volume" ID="{EFFE7EBA-746F-4140-B307-B0E7B5D4442B}" ShortID="866982219" Type="ChangeBusVolume" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{CA55C3CE-B6C5-4224-AB11-A96D3D1A9BBE}" Global="true">
+											<ObjectRef Name="MX" ID="{70DE2CBB-D6BB-40DD-B943-8429206D5ECD}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_unmute" ID="{1FB0C45A-0230-4E1F-BF04-EF993D09881F}">
+							<ChildrenList>
+								<Action Name="Set Bus Volume" ID="{ECE45DCC-1124-4A5F-BBE3-E5D3ADC96C39}" ShortID="924728702" Type="ChangeBusVolume" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{DF6B666F-B7A0-4C97-8571-9F50597D84FE}" Global="true">
+											<ObjectRef Name="MX" ID="{70DE2CBB-D6BB-40DD-B943-8429206D5ECD}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="sfx_unmute" ID="{2C81F83B-AAD9-482E-BE68-F11563C0F767}">
+					<ChildrenList>
+						<Action Name="Set Bus Volume" ID="{BB590D0B-BCD5-45D7-BFF4-38D89122EFCD}" ShortID="546827156" Type="ChangeBusVolume" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{130BEC98-FB0B-4756-BEDD-185EDD82A0FF}" Global="true">
+									<ObjectRef Name="SFX" ID="{B1A6D37B-64A9-4B2F-BC8A-FD1535CCEABD}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sfx_mute" ID="{949918BE-AF71-46AB-BF06-9F5EC0042472}">
+					<ChildrenList>
+						<Action Name="Set Bus Volume" ID="{D084E0FE-A0A7-49D5-8C50-EB6C1EA2EAAA}" ShortID="632351107" Type="ChangeBusVolume" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{263046CA-A186-41C6-B848-3EE522F051D0}" Global="true">
+									<ObjectRef Name="SFX" ID="{B1A6D37B-64A9-4B2F-BC8A-FD1535CCEABD}" WorkUnitID="{4F00462A-585C-4C25-BAAF-9F312EF987DF}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
