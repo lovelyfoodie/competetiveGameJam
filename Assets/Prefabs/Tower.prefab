@@ -308,7 +308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftPlayerPrefab: {fileID: 1289696356988766, guid: 1912f748d06b38f499d8fc5c9e19b670,
     type: 2}
-  rightPlayerPrefab: {fileID: 0}
+  rightPlayerPrefab: {fileID: 1307670851682990, guid: d8c8132934b644c33b42fcab7ec311f5,
+    type: 2}
   leftSpawnPosition: {fileID: 4968771969173598}
   rightSpawnPosition: {fileID: 4760072042657938}
 --- !u!114 &114732683443213488
