@@ -17,7 +17,7 @@ public class MusicLooper : MonoBehaviour {
     {
         if (startMenuMusicEvent != null)
         {
-            startMenuMusicEvent.Post(wwiseGlobalRef ?? gameObject);
+            startMenuMusicEvent.Post(gameObject);
         }
     }
 
@@ -25,7 +25,7 @@ public class MusicLooper : MonoBehaviour {
     {
         if (startGameplayMusicEvent != null)
         {
-            startGameplayMusicEvent.Post(wwiseGlobalRef ?? gameObject);
+            startGameplayMusicEvent.Post(gameObject);
         }
     }
 
@@ -33,7 +33,7 @@ public class MusicLooper : MonoBehaviour {
     {
         if (startGameoverMusicEvent != null)
         {
-            startGameoverMusicEvent.Post(wwiseGlobalRef ?? gameObject);
+            startGameoverMusicEvent.Post(gameObject);
         }
     }
 }

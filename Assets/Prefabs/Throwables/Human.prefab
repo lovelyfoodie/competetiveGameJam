@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 50619594973018844}
   - component: {fileID: 114083957582806122}
   m_Layer: 8
-  m_Name: RubberDuck
+  m_Name: Human
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.14104943
+  m_Mass: 1.0578706
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510d20e748a9a0f498a7f2012239428a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: b5be15365a8bdef46bcb5dc9d3ad4afc, type: 2}
+  data: {fileID: 11400000, guid: 35ededa6eba368945ad1ba2ed3fe5a91, type: 2}
   OnThrown:
     m_PersistentCalls:
       m_Calls: []
@@ -156,7 +156,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 0307980cbd4a4ba48a37811893d0ad98, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4c12660c1751c54eafef1073f4799c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

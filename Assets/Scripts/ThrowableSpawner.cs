@@ -37,14 +37,14 @@ public class ThrowableSpawner : MonoBehaviour
         Init();
     }
 
-    public GameObject Peek(int numAhead)
+    private GameObject GetThrowable(int numAhead)
     {
         Random.InitState(_seed + _spawnCount + numAhead);
         float r = Random.value;
         int index = (int)(r * _throwables.Count);
 
-        GameObject go = _throwables[index];
-
+        GameObject go = Instantiate(_throwables[index], gameObject.transform.position, gameObject.transform.rotation) as GameObject;
+        
         Throwable throwable = go.GetComponent<Throwable>();
         throwable.Size = throwable.data.Size(r);
 
@@ -52,7 +52,7 @@ public class ThrowableSpawner : MonoBehaviour
     }
     public GameObject GetThrowable()
     {
-        GameObject throwable = Peek(0);
+        GameObject throwable = GetThrowable(0);
         _spawnCount++;
 
         return throwable;

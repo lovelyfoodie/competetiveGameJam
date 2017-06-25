@@ -27,19 +27,18 @@ public class LeftPlayerController : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.A)) { //left key press
 			item = spawner.GetThrowable ();
 			thrownItem = Instantiate (item, gameObject.transform.position, gameObject.transform.rotation) as GameObject;
+
 			thrownRigidBody = thrownItem.GetComponent <Rigidbody2D>();
 			float objMass = thrownRigidBody.mass;
 			float thrust = objMass * ACCELERATION; 
 			thrownRigidBody.AddForce (transform.up * thrust);
-			float angleOfRelease = transform.rotation.z;
+            thrownRigidBody.AddTorque(Random.Range(thrust * 0.5f, thrust * 2f));
+
+            float angleOfRelease = transform.rotation.z;
 			float xForce = Mathf.Cos (angleOfRelease) * thrust * .1f; 
 			tower.addForce (xForce);
+
             item.GetComponent<Throwable>().Throw();
-
         }
-
-
-			
-
 	}
 }
