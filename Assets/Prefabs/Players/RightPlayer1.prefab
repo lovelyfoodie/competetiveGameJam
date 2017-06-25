@@ -53,7 +53,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4640320610614576}
   m_Layer: 0
-  m_Name: RightPlayer
+  m_Name: RightPlayer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e27741127790e34587dea88dde8e2e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTower1: 1
   fireKey: 100
   throwTorque: 0.2
   throwPoint: {fileID: 4682493540621248}

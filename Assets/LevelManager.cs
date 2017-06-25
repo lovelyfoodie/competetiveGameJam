@@ -20,7 +20,10 @@ public class LevelManager : MonoBehaviour {
 
 	public void GoToLevel(string levelName){
         if (music != null)
+        {
             music.PlayGameplayMusic();
+            music.EnableBirdSounds(true);
+        }
 
         SceneManager.LoadScene (levelName);
 	}
