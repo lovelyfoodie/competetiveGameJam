@@ -9,6 +9,7 @@ using System.Security.Cryptography;
 
 public class PlayerController : MonoBehaviour {
 
+    public bool isTower1 = false;
     public KeyCode fireKey;
     public float throwTorque = 0.2f;
     public Transform throwPoint;
@@ -76,6 +77,7 @@ public class PlayerController : MonoBehaviour {
     void LoadNextItem()
     {
         held = spawner.GetThrowable();
+        held.layer = isTower1 ? 8 : 13;
         held.transform.SetParent(holdPoint);
         held.transform.localPosition = Vector3.zero;
         held.transform.localRotation = Quaternion.identity;

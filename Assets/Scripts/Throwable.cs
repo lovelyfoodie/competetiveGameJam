@@ -21,11 +21,16 @@ public class Throwable : MonoBehaviour {
 
             if (data.thrownObjectSize != null)
             {
-                data.thrownObjectSize.SetValue(value, gameObject);
+                data.thrownObjectSize.SetValue(GetSizeRatio(value), gameObject);
             }
 
             gameObject.transform.localScale = new Vector3(value, value, value);
         }
+    }
+
+    private float GetSizeRatio(float value)
+    {
+        return (value - data.minSize) / (data.maxSize - data.minSize);
     }
 
     public float Area

@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e27741127790e34587dea88dde8e2e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTower1: 0
   fireKey: 106
   throwTorque: 0.2
   throwPoint: {fileID: 4115340531684210}
