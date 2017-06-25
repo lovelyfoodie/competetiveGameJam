@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\Unity5 Projects\BalanceTower\BalanceTower_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Joe\Documents\WwiseProjects\GameJamSummer2017\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -24,15 +24,39 @@
 				<Event Id="1868184033" Name="music_stop_all" ObjectPath="\Events\Default Work Unit\Music\music_stop_all"/>
 				<Event Id="2132259803" Name="music_unmute" ObjectPath="\Events\Default Work Unit\Music\music_unmute"/>
 				<Event Id="80529422" Name="music_unpause" ObjectPath="\Events\Default Work Unit\Music\music_unpause"/>
-				<Event Id="1602866773" Name="play_tower_lean_loop" ObjectPath="\Events\Default Work Unit\play_tower_lean_loop"/>
+				<Event Id="74568784" Name="play_bird_loop" ObjectPath="\Events\Default Work Unit\AMB Events\play_bird_loop"/>
+				<Event Id="3452427035" Name="play_left_tower_lean_loop" ObjectPath="\Events\Default Work Unit\play_left_tower_lean_loop"/>
+				<Event Id="3682855322" Name="play_right_tower_lean_loop" ObjectPath="\Events\Default Work Unit\play_right_tower_lean_loop"/>
 				<Event Id="2835551186" Name="sfx_mute" ObjectPath="\Events\Default Work Unit\sfx_mute"/>
 				<Event Id="1305045635" Name="sfx_unmute" ObjectPath="\Events\Default Work Unit\sfx_unmute"/>
-				<Event Id="2083153279" Name="stop_tower_lean_loop" ObjectPath="\Events\Default Work Unit\stop_tower_lean_loop"/>
+				<Event Id="4172146526" Name="stop_bird_loop" ObjectPath="\Events\Default Work Unit\AMB Events\stop_bird_loop"/>
+				<Event Id="846393217" Name="stop_left_tower_lean_loop" ObjectPath="\Events\Default Work Unit\stop_left_tower_lean_loop"/>
+				<Event Id="3268665312" Name="stop_right_tower_lean_loop" ObjectPath="\Events\Default Work Unit\stop_right_tower_lean_loop"/>
+				<Event Id="1722017399" Name="throw_cactus" ObjectPath="\Events\Default Work Unit\Throw Events\throw_cactus"/>
+				<Event Id="3216106938" Name="throw_cat" ObjectPath="\Events\Default Work Unit\Throw Events\throw_cat"/>
 				<Event Id="3115441195" Name="throw_cow" ObjectPath="\Events\Default Work Unit\Throw Events\throw_cow"/>
+				<Event Id="1460153757" Name="throw_person" ObjectPath="\Events\Default Work Unit\Throw Events\throw_person"/>
+				<Event Id="1821836184" Name="throw_person_female" ObjectPath="\Events\Default Work Unit\Throw Events\throw_person_female"/>
+				<Event Id="3217273127" Name="throw_person_male" ObjectPath="\Events\Default Work Unit\Throw Events\throw_person_male"/>
 				<Event Id="1207426921" Name="throw_rock" ObjectPath="\Events\Default Work Unit\Throw Events\throw_rock"/>
 				<Event Id="4038429815" Name="throw_rubberduck" ObjectPath="\Events\Default Work Unit\Throw Events\throw_rubberduck"/>
+				<Event Id="916551976" Name="throw_simple" ObjectPath="\Events\Default Work Unit\Throw Events\throw_simple"/>
+				<Event Id="2774129122" Name="ui_select" ObjectPath="\Events\Default Work Unit\ui_select"/>
+				<Event Id="431171811" Name="wind_gust" ObjectPath="\Events\Default Work Unit\wind_gust"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="9195285" Language="SFX">
+					<ShortName>throw_person_male_01.wav</ShortName>
+					<Path>SFX\throw_person_male_01_9E69E797.wem</Path>
+				</File>
+				<File Id="11737965" Language="SFX">
+					<ShortName>throw_cat_01.wav</ShortName>
+					<Path>SFX\throw_cat_01_9E69E797.wem</Path>
+				</File>
+				<File Id="44553285" Language="SFX">
+					<ShortName>forest_wind_gust_01.wav</ShortName>
+					<Path>SFX\forest_wind_gust_01_9E69E797.wem</Path>
+				</File>
 				<File Id="50754923" Language="SFX">
 					<ShortName>throw_base_03.wav</ShortName>
 					<Path>SFX\throw_base_03_9E69E797.wem</Path>
@@ -40,6 +64,14 @@
 				<File Id="59895823" Language="SFX">
 					<ShortName>music_ending_01.wav</ShortName>
 					<Path>SFX\music_ending_01_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="80067457" Language="SFX">
+					<ShortName>throw_cactus_01.wav</ShortName>
+					<Path>SFX\throw_cactus_01_9E69E797.wem</Path>
+				</File>
+				<File Id="206278157" Language="SFX">
+					<ShortName>ui_select_01.wav</ShortName>
+					<Path>SFX\ui_select_01_9E69E797.wem</Path>
 				</File>
 				<File Id="294560458" Language="SFX">
 					<ShortName>throw_rock_03.wav</ShortName>
@@ -69,6 +101,10 @@
 					<ShortName>throw_rubberduck_02.wav</ShortName>
 					<Path>SFX\throw_rubberduck_02_9E69E797.wem</Path>
 				</File>
+				<File Id="515898601" Language="SFX">
+					<ShortName>amb_birds_loop_01.wav</ShortName>
+					<Path>SFX\amb_birds_loop_01_9E69E797.wem</Path>
+				</File>
 				<File Id="586500131" Language="SFX">
 					<ShortName>throw_base_02.wav</ShortName>
 					<Path>SFX\throw_base_02_9E69E797.wem</Path>
@@ -93,9 +129,21 @@
 					<ShortName>throw_cow_moo_04.wav</ShortName>
 					<Path>SFX\throw_cow_moo_04_9E69E797.wem</Path>
 				</File>
+				<File Id="745879590" Language="SFX">
+					<ShortName>throw_cat_02.wav</ShortName>
+					<Path>SFX\throw_cat_02_9E69E797.wem</Path>
+				</File>
+				<File Id="759460425" Language="SFX">
+					<ShortName>throw_person_female_01.wav</ShortName>
+					<Path>SFX\throw_person_female_01_9E69E797.wem</Path>
+				</File>
 				<File Id="760154812" Language="SFX">
 					<ShortName>music_main_loop.wav</ShortName>
 					<Path>SFX\music_main_loop_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="775454606" Language="SFX">
+					<ShortName>throw_cat_03.wav</ShortName>
+					<Path>SFX\throw_cat_03_9E69E797.wem</Path>
 				</File>
 				<File Id="781255647" Language="SFX">
 					<ShortName>throw_rock_01.wav</ShortName>
@@ -109,9 +157,21 @@
 					<ShortName>throw_cow_bell_02.wav</ShortName>
 					<Path>SFX\throw_cow_bell_02_9E69E797.wem</Path>
 				</File>
+				<File Id="849509325" Language="SFX">
+					<ShortName>forest_wind_gust_03.wav</ShortName>
+					<Path>SFX\forest_wind_gust_03_9E69E797.wem</Path>
+				</File>
+				<File Id="867739630" Language="SFX">
+					<ShortName>ui_select_02.wav</ShortName>
+					<Path>SFX\ui_select_02_9E69E797.wem</Path>
+				</File>
 				<File Id="882148558" Language="SFX">
 					<ShortName>tower_lean_sweetener_loop.wav</ShortName>
 					<Path>SFX\tower_lean_sweetener_loop_9E69E797.wem</Path>
+				</File>
+				<File Id="885477264" Language="SFX">
+					<ShortName>forest_wind_gust_02.wav</ShortName>
+					<Path>SFX\forest_wind_gust_02_9E69E797.wem</Path>
 				</File>
 				<File Id="904417328" Language="SFX">
 					<ShortName>throw_base_01.wav</ShortName>

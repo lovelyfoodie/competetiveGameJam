@@ -14,12 +14,20 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="play_left_tower_lean_loop" ID="{0468497A-70EC-4A02-8E42-067ECEAD2EE9}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="music_setstate_gameplay" ID="{8B63516E-81DF-497B-8EF3-EABBDA749A9C}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="throw_rock" ID="{E9A87116-B52B-4FE0-BB68-52B4F41B5B60}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_select" ID="{47951249-BE6B-4050-BDBC-4621C717DA7E}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="music_gameover" ID="{37DFFB03-70F3-44F2-99E7-5FEC88DDA009}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
@@ -29,11 +37,27 @@
 							<ObjectRef Name="throw_rubberduck" ID="{894A6CFB-DAFC-4B2D-AA1C-699DB0617506}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
 							<Position X="2" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="play_bird_loop" ID="{AAF16AF4-89A5-41AB-B567-BB02E4973766}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_bird_loop" ID="{0283A6EE-3619-450B-A129-D07555DCD0BC}" WorkUnitID="{07EE9310-BE81-4ADE-AEB4-245A3E741F99}"/>
+							<Position X="3" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
 							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="size_cat" ID="{9F4BD23A-CEF9-4156-B302-50C62301D89B}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="tower_deflection_left" ID="{DC2D7636-99AF-4432-9F39-C6C603280677}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
@@ -44,12 +68,16 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="tower_velocity" ID="{50C524C4-3C38-4558-AD90-D5D6329FCE9F}"/>
-							<Value>0</Value>
+							<GameParameterRef Name="tower_velocity_right" ID="{50C524C4-3C38-4558-AD90-D5D6329FCE9F}"/>
+							<Value>-1.77635683940025E-15</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="tower_deflection" ID="{DBBDEF4B-C0C1-464B-B443-17BC5CC74820}"/>
-							<Value>100</Value>
+							<GameParameterRef Name="tower_velocity_left" ID="{DFEFEF53-818A-45D5-AFAD-6546494534D6}"/>
+							<Value>-0.4</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="tower_deflection_right" ID="{DBBDEF4B-C0C1-464B-B443-17BC5CC74820}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
@@ -62,6 +90,14 @@
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
 							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="size_person" ID="{9F830CC8-29EA-4748-B576-3B4D3D6D8B09}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="wind_volume" ID="{9022ABFD-73CE-4887-A442-4EB5A987012C}"/>
+							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
@@ -88,12 +124,16 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="size_cactus" ID="{B894E525-14E9-4E2B-B8F6-56AFC1FA46DF}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="size_rubberduck" ID="{ABBACAD1-766A-4F1B-836C-F886B83964D4}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Menu_Loop" ID="{C597C869-BF41-4D07-AD7F-0650DD796BB2}"/>
+						<CurrentStateRef Name="Gameplay_Loop" ID="{0E09EC4A-42EB-4801-A879-C4E3726860F9}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

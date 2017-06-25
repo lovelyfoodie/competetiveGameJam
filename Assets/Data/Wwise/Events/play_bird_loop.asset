@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec7e22a027371540948c21267dfcd3a, type: 3}
   m_Name: play_bird_loop
   m_EditorClassIdentifier: 
-  isEnabled: 0
+  isEnabled: 1
   eventName: play_bird_loop
