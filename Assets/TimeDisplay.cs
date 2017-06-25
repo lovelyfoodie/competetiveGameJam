@@ -19,8 +19,8 @@ public class TimeDisplay : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		time = time + Time.deltaTime;
-		minutes = Mathf.Floor(time / 60).ToString("00");
-		seconds = (time % 60).ToString("00");
+		minutes = Mathf.Floor(time / 60).ToString("#0");
+		seconds = Mathf.Floor(time % 60).ToString("00");
 		timeDisplay.text = minutes + ":" + seconds;
 	}
 }
