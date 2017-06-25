@@ -5,6 +5,7 @@
 /[Bb]uilds/
 /Assets/AssetStoreTools*
 /Assets/Wwise/Deployment*
+/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData*
 
 # Visual Studio 2015 cache directory
 /.vs/
