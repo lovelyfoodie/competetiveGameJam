@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Name: BaseThrowableProfile
   m_EditorClassIdentifier: 
   spawnData:
-  - weight: 5
+  - weight: 3
     prefabRef: {fileID: 1817271452645040, guid: 264ab6133e9a8c345b2305ae0ed59bd0,
+      type: 2}
+  - weight: 3
+    prefabRef: {fileID: 1817271452645040, guid: 45565ce9b263c5940942b4d8390a6426,
       type: 2}
   - weight: 3
     prefabRef: {fileID: 1817271452645040, guid: b38f8434365cd5444a44b35b76d9e390,
