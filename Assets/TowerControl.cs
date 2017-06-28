@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class TowerControl : MonoBehaviour
 {
     public Transform currentCenter;
@@ -12,6 +13,7 @@ public class TowerControl : MonoBehaviour
     public WwiseSetRTPC towerVelocityChange;
     public WwiseSetRTPC towerDisplacementChange;
 
+    private Rigidbody2D _towerShaft;
     private Vector3 _originalCenterPosition;
     private float _prevDisplacement = 0f;
     private int _maxMoveSamples = 5;
@@ -46,6 +48,7 @@ public class TowerControl : MonoBehaviour
 
     private void Start()
     {
+        _towerShaft = GetComponent<Rigidbody2D>();
         towerCreekSound.Post(gameObject);
     }
 
@@ -55,9 +58,6 @@ public class TowerControl : MonoBehaviour
         {
             float change = _prevDisplacement - Displacement;
             AddMoveSample(change);
-
-            //towerVelocityChange.SetValue(100, gameObject);
-            //towerDisplacementChange.SetValue(100, gameObject);
 
             towerVelocityChange.SetValue(Velocity, gameObject);
             towerDisplacementChange.SetValue(Displacement, gameObject);
@@ -88,6 +88,11 @@ public class TowerControl : MonoBehaviour
     public void Kill()
     {
         towerCreekSoundStop.Post(gameObject);
+    }
+
+    public void addForce(float xForce)
+    {
+        _towerShaft.AddForce(transform.right * xForce);
     }
 }
 
