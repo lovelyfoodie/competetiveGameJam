@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: stop_tower_lean_loop_left
   m_EditorClassIdentifier: 
   isEnabled: 1
-  eventName: stop_tower_lean_loop
+  eventName: stop_left_tower_lean_loop

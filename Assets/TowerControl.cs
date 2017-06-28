@@ -6,20 +6,19 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody2D))]
 public class TowerControl : MonoBehaviour
 {
-    public Transform currentCenter;
+    [Tooltip("Discplacement from vertical (in degrees) at which the tower will break.")]
+    public float displacementLimit = 60f; // degrees
     
     public WwisePostEvent towerCreekSound;
     public WwisePostEvent towerCreekSoundStop;
     public WwiseSetRTPC towerVelocityChange;
     public WwiseSetRTPC towerDisplacementChange;
 
-    private Rigidbody2D _towerShaft;
-    private Vector3 _originalCenterPosition;
+    private Rigidbody2D _rb;
+    private HingeJoint2D _hinge;
     private float _prevDisplacement = 0f;
     private int _maxMoveSamples = 5;
     private float[] _moveSamples;
-
-    //TODO IsFalling?
 
     public float Velocity
     {
@@ -32,7 +31,8 @@ public class TowerControl : MonoBehaviour
     {
         get
         {
-            return (_originalCenterPosition - currentCenter.position).magnitude;
+            return Mathf.Abs(_hinge.jointAngle) / displacementLimit * 6.83f;
+            //return (_originalCenterPosition - currentCenter.position).magnitude;
         }
     }
 
@@ -42,13 +42,13 @@ public class TowerControl : MonoBehaviour
     {
         towerVelocityChange.ResetRangeTracker();
         towerDisplacementChange.ResetRangeTracker();
-        _originalCenterPosition = currentCenter.position;
+        _rb = GetComponent<Rigidbody2D>();
+        _hinge = GetComponent<HingeJoint2D>();
         _moveSamples = new float[_maxMoveSamples];
     }
 
     private void Start()
     {
-        _towerShaft = GetComponent<Rigidbody2D>();
         towerCreekSound.Post(gameObject);
     }
 
@@ -56,6 +56,7 @@ public class TowerControl : MonoBehaviour
     {
         if (_prevDisplacement != Displacement)
         {
+            // Calculate and update velocity and displacement.
             float change = _prevDisplacement - Displacement;
             AddMoveSample(change);
 
@@ -63,6 +64,10 @@ public class TowerControl : MonoBehaviour
             towerDisplacementChange.SetValue(Displacement, gameObject);
 
             _prevDisplacement = Displacement;
+
+            // Check angle and break tower if over limit.
+            if (Mathf.Abs(_hinge.jointAngle) > displacementLimit)
+                Kill();
         }
     }
 
@@ -88,11 +93,17 @@ public class TowerControl : MonoBehaviour
     public void Kill()
     {
         towerCreekSoundStop.Post(gameObject);
+
+        _hinge.enabled = false;
+
+        //TODO: add upward force for hilarity
+        //TODO: detach players for hilarity
+        //TODO: inform game to end
     }
 
     public void addForce(float xForce)
     {
-        _towerShaft.AddForce(transform.right * xForce);
+        _rb.AddForce(transform.right * xForce);
     }
 }
 
