@@ -96,7 +96,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4791386565823796}
   - component: {fileID: 114480349834955528}
-  - component: {fileID: 114875654336467336}
   - component: {fileID: 114504136191540258}
   m_Layer: 0
   m_Name: PlayerController
@@ -221,17 +220,6 @@ MonoBehaviour:
   minThrowAngle: {x: -0.7, y: 1, z: 0}
   maxThrowAngle: {x: -1.2, y: 1, z: 0}
   sprite: {fileID: 212302065700497614}
---- !u!114 &114875654336467336
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1812736003941014}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841068f3b50764303a370e1a08340a4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212302065700497614
 SpriteRenderer:
   m_ObjectHideFlags: 1

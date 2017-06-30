@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4366645575898268}
   - component: {fileID: 114407416099017576}
-  - component: {fileID: 114402319549044534}
   - component: {fileID: 114788511318801284}
   m_Layer: 0
   m_Name: PlayerController
@@ -188,17 +187,6 @@ Transform:
   m_Father: {fileID: 4640320610614576}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114402319549044534
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1089664814270398}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e17830a6f63d42fe90b57bff8b01b15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114407416099017576
 MonoBehaviour:
   m_ObjectHideFlags: 1

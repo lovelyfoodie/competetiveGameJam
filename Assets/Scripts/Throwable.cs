@@ -40,7 +40,8 @@ public class Throwable : MonoBehaviour {
             if (Collider is CapsuleCollider2D)
             {
                 CapsuleCollider2D c = (Collider as CapsuleCollider2D);
-                return c.size.x * c.size.y * transform.localScale.x * transform.localScale.y;
+                return c.bounds.size.x * c.bounds.size.y;
+                //return c.size.x * c.size.y * transform.localScale.x * transform.localScale.y;
             } 
             else
             {

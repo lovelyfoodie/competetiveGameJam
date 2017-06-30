@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c3764e86165c8449c4ee1da9ac3b90, type: 3}
   m_Name: CatThrowable
   m_EditorClassIdentifier: 
-  density: 0.8
+  density: 1.1
   minSize: 0.7
   maxSize: 1.3
   sizeDistribution:
