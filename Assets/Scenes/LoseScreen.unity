@@ -1048,6 +1048,7 @@ GameObject:
   - component: {fileID: 1168988520}
   - component: {fileID: 1168988519}
   - component: {fileID: 1168988518}
+  - component: {fileID: 1168988521}
   m_Layer: 5
   m_Name: RestartText
   m_TagString: Untagged
@@ -1164,6 +1165,34 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1168988516}
+--- !u!114 &1168988521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1168988516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cadb6734f1f4f3408e8a260d8b56a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 32
+  OnInputEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 93698709}
+        m_MethodName: GoToLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BalanceTower
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1177181141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,7 +1606,7 @@ Prefab:
     - target: {fileID: 114853822465246654, guid: ccf09435c27497147acaddd11fcad298,
         type: 2}
       propertyPath: basePath
-      value: Audio/GeneratedSoundBanks
+      value: Audio\GeneratedSoundBanks
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccf09435c27497147acaddd11fcad298, type: 2}
