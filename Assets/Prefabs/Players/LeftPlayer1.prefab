@@ -218,8 +218,8 @@ MonoBehaviour:
   throwPointLeft: {fileID: 4115340531684210}
   throwPointRight: {fileID: 4630742643721984}
   holdPoint: {fileID: 4486813578959950}
-  throwAngle: {x: 0, y: 0, z: 72}
-  held: {fileID: 0}
+  minThrowAngle: {x: -0.7, y: 1, z: 0}
+  maxThrowAngle: {x: -1.2, y: 1, z: 0}
   sprite: {fileID: 212302065700497614}
 --- !u!114 &114875654336467336
 MonoBehaviour:

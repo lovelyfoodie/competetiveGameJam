@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33914800a94fae542b9f11e799da0d73, type: 3}
-  m_Name: CowsThrowableProfile
+  m_Name: CatsThrowableProfile
   m_EditorClassIdentifier: 
   spawnData:
   - weight: 1
-    prefabRef: {fileID: 1817271452645040, guid: de7cfed8b2ddee14f9f582a9ad04dc58,
+    prefabRef: {fileID: 1817271452645040, guid: 2c2ed29a7dba24e488a27f9af7de3a25,
       type: 2}
