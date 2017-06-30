@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c3764e86165c8449c4ee1da9ac3b90, type: 3}
+  m_Name: MushroomThrowable
+  m_EditorClassIdentifier: 
+  density: 1
+  minSize: 0.5
+  maxSize: 2
+  sizeDistribution:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0.6220352
+      outSlope: 0.6220352
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 0.83782053
+      value: 0.52115387
+      inSlope: 1.7873023
+      outSlope: 1.7873023
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 2.9525692
+      outSlope: 2.9525692
+      tangentMode: 34
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  onThrownSound: {fileID: 11400000, guid: 1f468269ca499944a94892c1a54fc561, type: 2}
+  thrownObjectSize: {fileID: 0}
