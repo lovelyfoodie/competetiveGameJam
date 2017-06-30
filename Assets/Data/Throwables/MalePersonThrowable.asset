@@ -38,5 +38,5 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  onThrownSound: {fileID: 11400000, guid: 552b98d3313b8c04db7e0b4c0fa96ce1, type: 2}
+  onThrownSound: {fileID: 11400000, guid: c0d13cdabd76ea0439aa5cc345526d8f, type: 2}
   thrownObjectSize: {fileID: 11400000, guid: a052d2fee6d4ee7498c4edb4397df58c, type: 2}

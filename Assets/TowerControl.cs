@@ -115,7 +115,7 @@ public class TowerControl : MonoBehaviour
 
     private IEnumerator EndGame()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         _end.EndGame();
     }
 
