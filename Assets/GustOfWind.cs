@@ -11,7 +11,7 @@ public class GustOfWind : MonoBehaviour {
 	private GameObject [] spawnPoints; 
 	private const float MIN_TIME = 7;
 	private const float MAX_TIME = 14;
-	private Tower tower; 
+	private TowerControl tower; 
 	float xForce;
 
 	// Use this for initialization
@@ -19,7 +19,7 @@ public class GustOfWind : MonoBehaviour {
 
 		float randomTime = Random.Range (MIN_TIME, MAX_TIME);
 		Invoke ("Gust", randomTime);
-		tower = FindObjectOfType<Tower> ();
+		tower = FindObjectOfType<TowerControl> ();
 		
 	}
 	

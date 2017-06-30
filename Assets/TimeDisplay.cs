@@ -10,6 +10,7 @@ public class TimeDisplay : MonoBehaviour {
 	private float time;
 	private string minutes;
 	private string seconds;
+	private string millis;
 	private bool runTimer;
 	// Use this for initialization
 	void Awake () {
@@ -22,9 +23,11 @@ public class TimeDisplay : MonoBehaviour {
 	void Update () {
 		if (runTimer) {
 			time = time + Time.deltaTime;
-			minutes = Mathf.Floor (time / 60).ToString ("#0");
+			minutes = Mathf.Floor (time / 60).ToString ("00");
 			seconds = Mathf.Floor (time % 60).ToString ("00");
-			timeDisplay.text = minutes + ":" + seconds;
+			millis = ((time * 100f) % 100f).ToString ("00");
+
+			timeDisplay.text = minutes + ":" + seconds + ":" + millis;
 		}
 	}
 

@@ -151,6 +151,18 @@ Prefab:
       propertyPath: m_Name
       value: Tower2
       objectReference: {fileID: 0}
+    - target: {fileID: 114595300869891062, guid: c05e1d013ccbedf45a0cd40df9d1bb74,
+        type: 2}
+      propertyPath: leftPlayerPrefab
+      value: 
+      objectReference: {fileID: 1289696356988766, guid: d26787822b03b58468d089cdfe92bf28,
+        type: 2}
+    - target: {fileID: 114595300869891062, guid: c05e1d013ccbedf45a0cd40df9d1bb74,
+        type: 2}
+      propertyPath: rightPlayerPrefab
+      value: 
+      objectReference: {fileID: 1307670851682990, guid: 14b6a6182c1f05e42a8bcf8781e443f7,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c05e1d013ccbedf45a0cd40df9d1bb74, type: 2}
   m_IsPrefabParent: 0

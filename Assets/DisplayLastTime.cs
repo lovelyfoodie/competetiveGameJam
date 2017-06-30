@@ -13,7 +13,7 @@ public class DisplayLastTime : MonoBehaviour {
         if (!displayText)
             return;
 
-		string text = PlayerPrefs.GetString ("FinalScore");
+		string text = PlayerPrefs.GetString ("HIScore1");
 		if (text != null) {
 			displayText.text = text;
 		} else {

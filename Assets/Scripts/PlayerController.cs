@@ -9,6 +9,8 @@ using System.Security.Cryptography;
 
 public class PlayerController : MonoBehaviour {
 
+    private const float ACCELERATION = 210.172341f;
+
     public bool isTower1 = false;
     public KeyCode fireLeft;
     public KeyCode fireRight;
@@ -24,8 +26,7 @@ public class PlayerController : MonoBehaviour {
 
 	private GameObject item;
 	private ThrowableSpawner spawner;
-	private const float ACCELERATION = 210.172341f; 
-	private Tower tower;
+	private TowerControl _tower;
 
     void Awake()
     {
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour {
     }
 	void Start() {
 		spawner = GetComponent<ThrowableSpawner> ();
-		tower = GetComponentInParent<Tower> ();
+		_tower = GetComponentInParent<TowerControl> ();
 
         // Init held throwable.
         LoadNextItem();
@@ -82,7 +83,7 @@ public class PlayerController : MonoBehaviour {
    //         float xForce = Mathf.Cos (angleOfRelease) * thrust * .1f; 
 			//tower.addForce (xForce);
 
-            tower.addForce(directionMod * thrust * .1f);
+            _tower.addForce(directionMod * thrust * .1f);
 
             thrownItem.GetComponent<Throwable>().Throw();
 

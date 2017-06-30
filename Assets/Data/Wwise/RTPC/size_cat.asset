@@ -8,8 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ec7e22a027371540948c21267dfcd3a, type: 3}
-  m_Name: stop_tower_lean_loop_left
+  m_Script: {fileID: 11500000, guid: 1b042fd4c8120f34c82866181b198717, type: 3}
+  m_Name: size_cat
   m_EditorClassIdentifier: 
-  isEnabled: 1
-  eventName: stop_left_tower_lean_loop
+  rtpcName: size_cat

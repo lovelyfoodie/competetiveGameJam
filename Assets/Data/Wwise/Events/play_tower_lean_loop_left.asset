@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: play_tower_lean_loop_left
   m_EditorClassIdentifier: 
   isEnabled: 1
-  eventName: play_tower_lean_loop
+  eventName: play_left_tower_lean_loop
