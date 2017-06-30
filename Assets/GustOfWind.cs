@@ -4,59 +4,45 @@ using UnityEngine;
 using System.IO;
 using UnityEditor.Animations;
 
-public class GustOfWind : MonoBehaviour {
+public class GustOfWind : MonoBehaviour
+{
+    public WwisePostEvent gustSound;
+    public float minTime = 7f;
+    public float maxTime = 14f;
+    public float minForce = 50f;
+    public float maxForce = 100f;
+    public GameObject[] spawnPoints;
 
+    private TowerControl _tower;
 
-	[SerializeField]
-	private GameObject [] spawnPoints; 
-	private const float MIN_TIME = 7;
-	private const float MAX_TIME = 14;
-	private TowerControl tower; 
-	float xForce;
+    void Awake()
+    {
+        _tower = FindObjectOfType<TowerControl>();
+    }
+    void Start()
+    {
+        StartCoroutine(StartGust());
+    }
 
-	// Use this for initialization
-	void Start () {
+    IEnumerator StartGust()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(minTime, maxTime));
+            Gust();
+        }
+    }
 
-		float randomTime = Random.Range (MIN_TIME, MAX_TIME);
-		Invoke ("Gust", randomTime);
-		tower = FindObjectOfType<TowerControl> ();
-		
-	}
-	
-	// Update is called once per frame
-	void Gust () {
+    void Gust()
+    {
+        int spawnPoint = Random.Range(0, 4);
+        spawnPoints[spawnPoint].GetComponent<ParticleSystem>().Play();
 
-		float randomTime = Random.Range (MIN_TIME, MAX_TIME);
+        float directionMod = (spawnPoint == 2 || spawnPoint == 3) ? -1f : 1f;
+        _tower.AddXForce(Random.Range(minForce, maxForce) * directionMod);
 
-		int spawnPoint = Random.Range (0, 4);
-
-		GameObject currSpawn = spawnPoints [spawnPoint];
-		Debug.Log ("Spawn " + spawnPoint);
-
-		ParticleSystem partSys = currSpawn.GetComponent <ParticleSystem> ();
-		partSys.Play ();
-
-
-		//Todo: play animation
-		if (spawnPoint == 2 || spawnPoint == 3) {
-			xForce = Random.Range (50, 100) * -1;
-			Debug.Log ("LeftGust: "+xForce.ToString ());
-			
-		} 
-		else {
-			xForce = Random.Range (50, 100);
-			Debug.Log ("RightGust"+xForce.ToString ());
-		}
-
-
-		tower.addForce (xForce);
-
-
-		Invoke ("Gust", randomTime);
-
-
-
-
-		
-	}
+        // Play gust sound.
+        if (gustSound != null)
+            gustSound.Post(gameObject);
+    }
 }

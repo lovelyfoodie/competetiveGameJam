@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoseCollider : MonoBehaviour {
+public class EndGameControl : MonoBehaviour {
+
+    public bool colliderControlled = false;
 
 	private TimeDisplay timer;
 
@@ -13,50 +14,63 @@ public class LoseCollider : MonoBehaviour {
 		timer = FindObjectOfType<TimeDisplay> ();
 	}	
 
+    public void EndGame()
+    {
+        timer.Stop();
+
+        string playerScore = timer.GetComponent<Text>().text;
+        float numericScore = CalculateScore(playerScore);
+
+        PlayerPrefs.SetString("FinalScore", playerScore);
+
+        //Find other scores on leaderboard
+        float hiScore1 = CalculateScore(PlayerPrefs.GetString("HIScore1"));
+        float hiScore2 = CalculateScore(PlayerPrefs.GetString("HIScore2"));
+        float hiScore3 = CalculateScore(PlayerPrefs.GetString("HIScore3"));
+        float hiScore4 = CalculateScore(PlayerPrefs.GetString("HIScore4"));
+        float hiScore5 = CalculateScore(PlayerPrefs.GetString("HIScore5"));
+        if (numericScore <= hiScore5)
+        {
+            //Not a high score
+        } else
+        {
+            //Find rank
+            if (numericScore > hiScore1)
+            {
+                //Rank 1
+                Debug.Log("First Place");
+                SetHighScore(1, playerScore);
+            } else if (numericScore > hiScore2)
+            {
+                //Rank 2
+                Debug.Log("Second Place");
+                SetHighScore(2, playerScore);
+            } else if (numericScore > hiScore3)
+            {
+                //Rank 3
+                Debug.Log("Third Place");
+                SetHighScore(3, playerScore);
+            } else if (numericScore > hiScore4)
+            {
+                //Rank 4
+                Debug.Log("Fourth Place");
+                SetHighScore(4, playerScore);
+            } else
+            {
+                //Rank 5
+                Debug.Log("Fifth Place");
+                SetHighScore(5, playerScore);
+            }
+        }
+        //Switch to end scene
+        StartCoroutine(StartSceneLoad(2f));
+    }
+
 	void OnTriggerEnter2D(Collider2D other) {
-		//Debug.Log (other.transform.name);
-		if (other.transform.name.Equals ("CenterOfGravity")) {
-			timer.Stop ();
-			//TODO check if top score against PlayerPrefs
-			string playerScore=timer.GetComponent<Text>().text;
-			float numericScore = CalculateScore(playerScore);
-			PlayerPrefs.SetString("FinalScore",playerScore);
-			//Find other scores on leaderboard
-			float hiScore1 = CalculateScore(PlayerPrefs.GetString("HIScore1"));
-			float hiScore2 = CalculateScore(PlayerPrefs.GetString("HIScore2"));
-			float hiScore3 = CalculateScore(PlayerPrefs.GetString("HIScore3"));
-			float hiScore4 = CalculateScore(PlayerPrefs.GetString("HIScore4"));
-			float hiScore5 = CalculateScore(PlayerPrefs.GetString("HIScore5"));
-			if (numericScore <= hiScore5) {
-				//Not a high score
-			}
-			else{
-				//Find rank
-				if (numericScore > hiScore1) {
-					//Rank 1
-					Debug.Log("First Place");
-					SetHighScore(1,playerScore);
-				} else if (numericScore > hiScore2) {
-					//Rank 2
-					Debug.Log("Second Place");
-					SetHighScore(2,playerScore);
-				} else if (numericScore > hiScore3) {
-					//Rank 3
-					Debug.Log("Third Place");
-					SetHighScore(3,playerScore);
-				} else if (numericScore > hiScore4) {
-					//Rank 4
-					Debug.Log("Fourth Place");
-					SetHighScore(4,playerScore);
-				} else {
-					//Rank 5
-					Debug.Log("Fifth Place");
-					SetHighScore(5,playerScore);
-				}
-			}
-            //Switch to end scene
-            StartCoroutine(StartSceneLoad(2f));
-		}
+
+		if (colliderControlled && other.transform.name.Equals ("CenterOfGravity"))
+            EndGame();
+
 	}
 
     IEnumerator StartSceneLoad(float delay)
@@ -115,7 +129,7 @@ public class LoseCollider : MonoBehaviour {
 			numericScore += Int32.Parse(seconds) * 1f;
 			string millis = timeSplit [2];
 			numericScore += Int32.Parse(millis) / 100f;
-			Debug.Log(numericScore);
+			//Debug.Log(numericScore);
 		}
 		catch(Exception e){
 			Debug.Log (e.Message);

@@ -448,8 +448,9 @@ MonoBehaviour:
     type: 2}
   startGameoverMusicEvent: {fileID: 11400000, guid: 6f417f5e56a32ba49aea3aaa5dc5e556,
     type: 2}
-  startBirdChirpEvent: {fileID: 0}
-  stopBirdChirpEvent: {fileID: 0}
+  startBirdChirpEvent: {fileID: 11400000, guid: 0cd4726a21242ee4cab4d8be1b176c6a,
+    type: 2}
+  stopBirdChirpEvent: {fileID: 11400000, guid: 11f2fc74f07d63e47a8d93eb3b6a2604, type: 2}
 --- !u!4 &669538479
 Transform:
   m_ObjectHideFlags: 0
