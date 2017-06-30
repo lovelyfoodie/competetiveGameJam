@@ -56,6 +56,20 @@ public class Throwable : MonoBehaviour {
         }
     }
 
+    private Animator _animator = null;
+    public Animator Animator
+    {
+        get
+        {
+            if (_animator == null)
+                _animator = GetComponent<Animator>();
+
+            if (_animator == null)
+                _animator = GetComponentInChildren<Animator>();
+
+            return _animator;
+        }
+    }
     private Collider2D _collider = null;
     public Collider2D Collider
     {
@@ -82,6 +96,9 @@ public class Throwable : MonoBehaviour {
     private void Awake()
     {
         Rigidbody.mass = Mass;
+
+        if (Animator != null)
+            Animator.StartPlayback();
     }
     private void OnValidate()
     {
@@ -91,9 +108,10 @@ public class Throwable : MonoBehaviour {
     public void Throw()
     {
         if (data.onThrownSound != null)
-        {
             data.onThrownSound.Post(gameObject);
-        }
+
+        if (Animator != null)
+            Animator.StopPlayback();
 
         OnThrown.Invoke();
     }
